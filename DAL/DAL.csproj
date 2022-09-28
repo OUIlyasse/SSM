@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +51,254 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Db\Banque.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Destruction.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Destruction_Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Entree.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Entree_Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Sortie.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Sortie_Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Bon_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Branche.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Charge.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Charge_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Client.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Bancaire.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Charge.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Client.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Employee.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Espece.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Fournisseur.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Local.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Compte_Local_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Devise.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Devise_Banque.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Employee.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Employee_Salaire.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entreprise_Info.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Achat.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Achat_Bonus.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Achat_Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Achat_Produit_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Achat_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Paiement_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Vente.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Vente_Bonus.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Vente_Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Vente_Produit_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Facture_Vente_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Fournisseur.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Impot.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Magasin.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Magasin_Branche.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Main_Caisse.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Bon_Entree_Magasin.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Bon_Sortie_Magasin.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Caisse.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Facture_Achat.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Facture_Achat_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Facture_Vente.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Facture_Vente_Retour.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Impot.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Recu_Achat.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Operation_Recu_Vente.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Barcode.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Boxe.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Categorie.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Detail.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Emplacement.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Image.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Section.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Produit_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Recu_Achat.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Recu_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Recu_Vente.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\sysdiagrams.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\sysSales.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysSales.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\sysSales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\sysSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysSales.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Traitement.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Unite_Mesure.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Unite_Type.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Db\sysSales.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>sysSales.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Db\sysSales.edmx.diagram">
+      <DependentUpon>sysSales.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Db\sysSales.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>sysSales.edmx</DependentUpon>
+      <LastGenOutput>sysSales.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Db\sysSales.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>sysSales.edmx</DependentUpon>
+      <LastGenOutput>sysSales.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

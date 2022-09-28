@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.btnTB = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -167,6 +168,7 @@
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
             this.fluentDesignFormContainer1.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -175,13 +177,22 @@
             // 
             // fluentDesignFormContainer1
             // 
-            this.fluentDesignFormContainer1.Controls.Add(this.pictureBox1);
+            this.fluentDesignFormContainer1.Controls.Add(this.pnlMain);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(315, 46);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
             this.fluentDesignFormContainer1.Size = new System.Drawing.Size(869, 672);
             this.fluentDesignFormContainer1.TabIndex = 0;
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Controls.Add(this.pictureBox1);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(869, 672);
+            this.pnlMain.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -191,7 +202,7 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(869, 672);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // accordionControl1
@@ -1225,6 +1236,7 @@
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.fluentDesignFormContainer1.ResumeLayout(false);
+            this.pnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
@@ -1371,6 +1383,7 @@
         public DevExpress.XtraBars.BarStaticItem txtMsg;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarHeaderItem barHeaderItem1;
+        private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

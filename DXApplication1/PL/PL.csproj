@@ -40,6 +40,9 @@
     <Reference Include="DevExpress.XtraBars.v18.1" />
     <Reference Include="DevExpress.Sparkline.v18.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -653,6 +656,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sub\frmParamSos.resx">
+      <DependentUpon>frmParamSos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -708,6 +714,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\11668643_20945651.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\DAL.csproj">
+      <Project>{3e18d9ed-f8bf-4e8a-afbc-b86e06f2a538}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools\Tools.csproj">
+      <Project>{d5edf100-11cd-42ac-b325-469a3c207de4}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

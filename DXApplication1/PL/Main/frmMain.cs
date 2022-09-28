@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Tools;
 
 namespace PL.Main
 {
@@ -15,6 +16,7 @@ namespace PL.Main
         public frmMain()
         {
             InitializeComponent();
+            txtDate.Caption = iTools.getDate();
         }
 
         private void btnAfficheFactureAvoir_Click(object sender, EventArgs e)
@@ -23,12 +25,10 @@ namespace PL.Main
 
         private void btnVCFA_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnCHitoriqueRembour_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

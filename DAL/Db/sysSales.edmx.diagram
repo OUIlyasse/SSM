@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f0cd13baf744ad9838b536e931bc92c" Name="Diagram1">
+        <EntityTypeShape EntityType="sysSalesModel.Banque" Width="1.5" PointX="6" PointY="100" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Destruction" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Destruction_Produit" Width="1.5" PointX="5.25" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Entree" Width="1.5" PointX="6" PointY="89.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Entree_Produit" Width="1.5" PointX="8.25" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Sortie" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Sortie_Produit" Width="1.5" PointX="5.25" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Bon_Type" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Branche" Width="1.5" PointX="3.75" PointY="77.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Charge" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Charge_Type" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Client" Width="1.5" PointX="1.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Bancaire" Width="1.5" PointX="8.25" PointY="78.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Charge" Width="1.5" PointX="10.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Client" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Employee" Width="1.5" PointX="8.25" PointY="93.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Espece" Width="1.5" PointX="8.25" PointY="84.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Fournisseur" Width="1.5" PointX="11" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Local" Width="1.5" PointX="8.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Compte_Local_Type" Width="1.5" PointX="6" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Devise" Width="1.5" PointX="6" PointY="75.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Devise_Banque" Width="1.5" PointX="8.25" PointY="74.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Employee" Width="1.5" PointX="6" PointY="94.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Employee_Salaire" Width="1.5" PointX="8.25" PointY="96.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Entreprise_Info" Width="1.5" PointX="1.5" PointY="78.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Achat" Width="1.5" PointX="3.75" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Achat_Bonus" Width="1.5" PointX="5.25" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Achat_Produit" Width="1.5" PointX="8.25" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Achat_Produit_Retour" Width="1.5" PointX="5.25" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Achat_Retour" Width="1.5" PointX="3" PointY="57.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Paiement_Type" Width="1.5" PointX="1.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Type" Width="1.5" PointX="1.5" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Vente" Width="1.5" PointX="0.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Vente_Bonus" Width="1.5" PointX="5.25" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Vente_Produit" Width="1.5" PointX="8.25" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Vente_Produit_Retour" Width="1.5" PointX="8.25" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Facture_Vente_Retour" Width="1.5" PointX="6" PointY="68.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Fournisseur" Width="1.5" PointX="1.5" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Impot" Width="1.5" PointX="8.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Magasin" Width="1.5" PointX="3.75" PointY="83.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Magasin_Branche" Width="1.5" PointX="6" PointY="80.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Main_Caisse" Width="1.5" PointX="6" PointY="84.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Bon_Entree_Magasin" Width="1.5" PointX="13.25" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Bon_Sortie_Magasin" Width="1.5" PointX="5.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Caisse" Width="1.5" PointX="13.5" PointY="82.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Facture_Achat" Width="1.5" PointX="11.25" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Facture_Achat_Retour" Width="1.5" PointX="11.25" PointY="74" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Facture_Vente" Width="1.5" PointX="8.25" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Facture_Vente_Retour" Width="1.5" PointX="11.25" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Impot" Width="1.5" PointX="11" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Recu_Achat" Width="1.5" PointX="15.75" PointY="81.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Operation_Recu_Vente" Width="1.5" PointX="12.75" PointY="65.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit" Width="1.5" PointX="3" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Barcode" Width="1.5" PointX="5.25" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Boxe" Width="1.5" PointX="0.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Categorie" Width="1.5" PointX="1.5" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Detail" Width="1.5" PointX="5.25" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Emplacement" Width="1.5" PointX="8.25" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Image" Width="1.5" PointX="5.25" PointY="64.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Section" Width="1.5" PointX="0.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Produit_Type" Width="1.5" PointX="0.75" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Recu_Achat" Width="1.5" PointX="10.5" PointY="87.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Recu_Type" Width="1.5" PointX="8.25" PointY="63.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Recu_Vente" Width="1.5" PointX="10.5" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Traitement" Width="1.5" PointX="3.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Unite_Mesure" Width="1.5" PointX="0.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="sysSalesModel.Unite_Type" Width="1.5" PointX="3" PointY="73.25" IsExpanded="true" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Bancaire_Banque" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Devise_Banque_Banque" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Destruction_Bon_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Destruction_Produit_Bon_Destruction" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Destruction_Produit_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Entree_Bon_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Entree_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Entree_Produit_Bon_Entree" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Bon_Entree_Magasin_Bon_Entree" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Entree_Produit_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Sortie_Bon_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Sortie_Facture_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Sortie_Produit_Bon_Sortie" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Bon_Sortie_Magasin_Bon_Sortie" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Bon_Sortie_Produit_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Bon_Entree_Magasin_Bon_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Bon_Sortie_Magasin_Bon_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Branche_Entreprise_Info" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Devise_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Employee_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Magasin_Branche_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Main_Caisse_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Retour_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Retour_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Achat_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Vente_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Charge_Charge" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Charge_Charge" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Client_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Retour_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Retour_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Bancaire_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Bancaire_Main_Caisse" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Caisse_Compte_Bancaire" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Achat_Compte_Bancaire" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Vente_Compte_Bancaire" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Client_Compte_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Employee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Espece_Main_Caisse" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Caisse_Compte_Espece" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Achat_Compte_Espece" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Vente_Compte_Espece" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Fournisseur_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Fournisseur_Traitement" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Compte_Local_Compte_Local_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Achat_Compte_Local" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Vente_Compte_Local" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Devise_Banque_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Retour_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Retour_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Achat_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Vente_Devise" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Employee_Salaire_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Bonus_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Facture_Paiement_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Facture_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Retour_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Achat_Facture_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Bonus_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Bonus_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Bonus_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Retour_Facture_Achat_Retour" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Retour_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Retour_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Produit_Retour_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Retour_Facture_Paiement_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Retour_Facture_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Achat_Retour_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Retour_Facture_Achat_Retour" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Facture_Paiement_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Retour_Facture_Paiement_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Facture_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Retour_Facture_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Facture_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Retour_Facture_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Facture_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Vente_Facture_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Bonus_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Bonus_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Bonus_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Retour_Facture_Vente_Retour" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Retour_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Retour_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Facture_Vente_Produit_Retour_Unite_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Vente_Retour_Facture_Vente_Retour" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Facture_Achat_Retour_Fournisseur" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Impot_Impot" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Magasin_Branche_Magasin" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Emplacement_Magasin_Branche" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Caisse_Main_Caisse" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Achat_Recu_Achat" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Operation_Recu_Vente_Recu_Vente" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Barcode_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Detail_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Emplacement_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Image_Produit" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Produit_Boxe" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Produit_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Produit_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Unite_Mesure" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Produit_Section_Produit_Categorie" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Achat_Recu_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Recu_Vente_Recu_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="sysSalesModel.FK_Unite_Type_Unite_Mesure" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
