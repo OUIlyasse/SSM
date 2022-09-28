@@ -25,5 +25,10 @@ namespace PL.Main
         {
 
         }
+
+        private void btnCHitoriqueRembour_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

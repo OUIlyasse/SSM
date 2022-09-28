@@ -32,16 +32,16 @@
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.btnTB = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GClient = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnListClients = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnAjoutClient = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnCHitoriqueRembour = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCA = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCHR = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GFournisseur = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFA = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFHR = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GDevis = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnDCr = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnDA = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GFacture = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GFV = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnVLF = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -205,31 +205,31 @@
             // GClient
             // 
             this.GClient.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnListClients,
-            this.btnAjoutClient,
-            this.btnCHitoriqueRembour});
-            this.GClient.Expanded = true;
+            this.btnCL,
+            this.btnCA,
+            this.btnCHR});
             this.GClient.ImageOptions.Image = global::PL.Properties.Resources.icons8_user_36px;
             this.GClient.Name = "GClient";
             this.GClient.Text = "Clients";
             // 
-            // btnListClients
+            // btnCL
             // 
-            this.btnListClients.Name = "btnListClients";
-            this.btnListClients.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnListClients.Text = "Liste Clients";
+            this.btnCL.Name = "btnCL";
+            this.btnCL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnCL.Text = "Liste Clients";
             // 
-            // btnAjoutClient
+            // btnCA
             // 
-            this.btnAjoutClient.Name = "btnAjoutClient";
-            this.btnAjoutClient.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnAjoutClient.Text = "Ajouter Clients";
+            this.btnCA.Name = "btnCA";
+            this.btnCA.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnCA.Text = "Ajouter Clients";
             // 
-            // btnCHitoriqueRembour
+            // btnCHR
             // 
-            this.btnCHitoriqueRembour.Name = "btnCHitoriqueRembour";
-            this.btnCHitoriqueRembour.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnCHitoriqueRembour.Text = "\r\nHistorique Remboursement";
+            this.btnCHR.Name = "btnCHR";
+            this.btnCHR.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnCHR.Text = "\r\nHistorique Remboursement";
+            this.btnCHR.Click += new System.EventHandler(this.btnCHitoriqueRembour_Click);
             // 
             // GFournisseur
             // 
@@ -237,7 +237,6 @@
             this.btnFL,
             this.btnFA,
             this.btnFHR});
-            this.GFournisseur.Expanded = true;
             this.GFournisseur.ImageOptions.Image = global::PL.Properties.Resources.icons8_supplier_36px;
             this.GFournisseur.Name = "GFournisseur";
             this.GFournisseur.Text = "Fournisseurs";
@@ -264,8 +263,7 @@
             // 
             this.GDevis.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnDList,
-            this.btnDCr});
-            this.GDevis.Expanded = true;
+            this.btnDA});
             this.GDevis.ImageOptions.Image = global::PL.Properties.Resources.icons8_estimate_36px;
             this.GDevis.Name = "GDevis";
             this.GDevis.Text = "Devis";
@@ -276,11 +274,11 @@
             this.btnDList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDList.Text = "Liste Devis";
             // 
-            // btnDCr
+            // btnDA
             // 
-            this.btnDCr.Name = "btnDCr";
-            this.btnDCr.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnDCr.Text = "Créer Devis";
+            this.btnDA.Name = "btnDA";
+            this.btnDA.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnDA.Text = "Ajouter Devis";
             // 
             // GFacture
             // 
@@ -1094,16 +1092,16 @@
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTB;
         private DevExpress.XtraBars.Navigation.AccordionControlElement GClient;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnListClients;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAjoutClient;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnCHitoriqueRembour;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnCL;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnCA;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnCHR;
         private DevExpress.XtraBars.Navigation.AccordionControlElement GFournisseur;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFL;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFA;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFHR;
         private DevExpress.XtraBars.Navigation.AccordionControlElement GDevis;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDList;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnDCr;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnDA;
         private DevExpress.XtraBars.Navigation.AccordionControlElement GFacture;
         private DevExpress.XtraBars.Navigation.AccordionControlElement GFV;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnVLF;

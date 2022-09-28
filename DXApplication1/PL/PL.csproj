@@ -60,149 +60,263 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sub\btnBCACreerOrdreAchat.cs">
+    <Compile Include="Sub\frmAA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\btnBCACreerOrdreAchat.Designer.cs">
-      <DependentUpon>btnBCACreerOrdreAchat.cs</DependentUpon>
+    <Compile Include="Sub\frmAA.Designer.cs">
+      <DependentUpon>frmAA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\btnBCAListeOrdreAchat.cs">
+    <Compile Include="Sub\frmAC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\btnBCAListeOrdreAchat.Designer.cs">
-      <DependentUpon>btnBCAListeOrdreAchat.cs</DependentUpon>
+    <Compile Include="Sub\frmAC.Designer.cs">
+      <DependentUpon>frmAC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\btnBCVCreerBonComande.cs">
+    <Compile Include="Sub\frmACE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\btnBCVCreerBonComande.Designer.cs">
-      <DependentUpon>btnBCVCreerBonComande.cs</DependentUpon>
+    <Compile Include="Sub\frmACE.Designer.cs">
+      <DependentUpon>frmACE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\btnBCVListeBonCommande.cs">
+    <Compile Include="Sub\frmACOA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\btnBCVListeBonCommande.Designer.cs">
-      <DependentUpon>btnBCVListeBonCommande.cs</DependentUpon>
+    <Compile Include="Sub\frmACOA.Designer.cs">
+      <DependentUpon>frmACOA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmACreerAvoirFournisseur.cs">
+    <Compile Include="Sub\frmAEP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmACreerAvoirFournisseur.Designer.cs">
-      <DependentUpon>frmACreerAvoirFournisseur.cs</DependentUpon>
+    <Compile Include="Sub\frmAEP.Designer.cs">
+      <DependentUpon>frmAEP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmACreerFactureAchat.cs">
+    <Compile Include="Sub\frmAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmACreerFactureAchat.Designer.cs">
-      <DependentUpon>frmACreerFactureAchat.cs</DependentUpon>
+    <Compile Include="Sub\frmAL.Designer.cs">
+      <DependentUpon>frmAL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmAFactureAchatRecurrente.cs">
+    <Compile Include="Sub\frmALE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmAFactureAchatRecurrente.Designer.cs">
-      <DependentUpon>frmAFactureAchatRecurrente.cs</DependentUpon>
+    <Compile Include="Sub\frmALE.Designer.cs">
+      <DependentUpon>frmALE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmAjouterClient.cs">
+    <Compile Include="Sub\frmALOA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmAjouterClient.Designer.cs">
-      <DependentUpon>frmAjouterClient.cs</DependentUpon>
+    <Compile Include="Sub\frmALOA.Designer.cs">
+      <DependentUpon>frmALOA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmAjouterFournisseurs.cs">
+    <Compile Include="Sub\frmALP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmAjouterFournisseurs.Designer.cs">
-      <DependentUpon>frmAjouterFournisseurs.cs</DependentUpon>
+    <Compile Include="Sub\frmALP.Designer.cs">
+      <DependentUpon>frmALP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmAListeAvoirFournisseur.cs">
+    <Compile Include="Sub\frmAU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmAListeAvoirFournisseur.Designer.cs">
-      <DependentUpon>frmAListeAvoirFournisseur.cs</DependentUpon>
+    <Compile Include="Sub\frmAU.Designer.cs">
+      <DependentUpon>frmAU.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmAListeFactureAchat.cs">
+    <Compile Include="Sub\frmDE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmAListeFactureAchat.Designer.cs">
-      <DependentUpon>frmAListeFactureAchat.cs</DependentUpon>
+    <Compile Include="Sub\frmDE.Designer.cs">
+      <DependentUpon>frmDE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVCreerFacturesAvoir.cs">
+    <Compile Include="Sub\frmDL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVCreerFacturesAvoir.Designer.cs">
-      <DependentUpon>frmVCreerFacturesAvoir.cs</DependentUpon>
+    <Compile Include="Sub\frmDL.Designer.cs">
+      <DependentUpon>frmDL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVCreerNoteDebit.cs">
+    <Compile Include="Sub\frmDR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVCreerNoteDebit.Designer.cs">
-      <DependentUpon>frmVCreerNoteDebit.cs</DependentUpon>
+    <Compile Include="Sub\frmDR.Designer.cs">
+      <DependentUpon>frmDR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVFactureRepetitive.cs">
+    <Compile Include="Sub\frmVA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVFactureRepetitive.Designer.cs">
-      <DependentUpon>frmVFactureRepetitive.cs</DependentUpon>
+    <Compile Include="Sub\frmVA.Designer.cs">
+      <DependentUpon>frmVA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVListeFacture.cs">
+    <Compile Include="Sub\frmVC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVListeFacture.Designer.cs">
-      <DependentUpon>frmVListeFacture.cs</DependentUpon>
+    <Compile Include="Sub\frmVC.Designer.cs">
+      <DependentUpon>frmVC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmCreerDevis.cs">
+    <Compile Include="Sub\frmVCBC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmCreerDevis.Designer.cs">
-      <DependentUpon>frmCreerDevis.cs</DependentUpon>
+    <Compile Include="Sub\frmVCBC.Designer.cs">
+      <DependentUpon>frmVCBC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmFHistoriqueRemboursement.cs">
+    <Compile Include="Sub\frmVComm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmFHistoriqueRemboursement.Designer.cs">
-      <DependentUpon>frmFHistoriqueRemboursement.cs</DependentUpon>
+    <Compile Include="Sub\frmVComm.Designer.cs">
+      <DependentUpon>frmVComm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmHistoriqueRemboursement.cs">
+    <Compile Include="Sub\frmVEP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmHistoriqueRemboursement.Designer.cs">
-      <DependentUpon>frmHistoriqueRemboursement.cs</DependentUpon>
+    <Compile Include="Sub\frmVEP.Designer.cs">
+      <DependentUpon>frmVEP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmListClient.cs">
+    <Compile Include="Sub\frmVF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmListClient.Designer.cs">
-      <DependentUpon>frmListClient.cs</DependentUpon>
+    <Compile Include="Sub\frmVF.Designer.cs">
+      <DependentUpon>frmVF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmListeDevis.cs">
+    <Compile Include="Sub\frmVLBC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmListeDevis.Designer.cs">
-      <DependentUpon>frmListeDevis.cs</DependentUpon>
+    <Compile Include="Sub\frmVLBC.Designer.cs">
+      <DependentUpon>frmVLBC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmListeFournisseurs.cs">
+    <Compile Include="Sub\frmACAF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmListeFournisseurs.Designer.cs">
-      <DependentUpon>frmListeFournisseurs.cs</DependentUpon>
+    <Compile Include="Sub\frmACAF.Designer.cs">
+      <DependentUpon>frmACAF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmTableauBord.cs">
+    <Compile Include="Sub\frmACFA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmTableauBord.Designer.cs">
-      <DependentUpon>frmTableauBord.cs</DependentUpon>
+    <Compile Include="Sub\frmACFA.Designer.cs">
+      <DependentUpon>frmACFA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVCreerFacture.cs">
+    <Compile Include="Sub\frmAFAR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVCreerFacture.Designer.cs">
-      <DependentUpon>frmVCreerFacture.cs</DependentUpon>
+    <Compile Include="Sub\frmAFAR.Designer.cs">
+      <DependentUpon>frmAFAR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sub\frmVListeFacturesAvoir.cs">
+    <Compile Include="Sub\frmCA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sub\frmVListeFacturesAvoir.Designer.cs">
-      <DependentUpon>frmVListeFacturesAvoir.cs</DependentUpon>
+    <Compile Include="Sub\frmCA.Designer.cs">
+      <DependentUpon>frmCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmFA.Designer.cs">
+      <DependentUpon>frmFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmALAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmALAF.Designer.cs">
+      <DependentUpon>frmALAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmALF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmALF.Designer.cs">
+      <DependentUpon>frmALF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCFA.Designer.cs">
+      <DependentUpon>frmVCFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCND.Designer.cs">
+      <DependentUpon>frmVCND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVFR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVFR.Designer.cs">
+      <DependentUpon>frmVFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVLF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVLF.Designer.cs">
+      <DependentUpon>frmVLF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmDA.Designer.cs">
+      <DependentUpon>frmDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmFHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmFHR.Designer.cs">
+      <DependentUpon>frmFHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmCHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmCHR.Designer.cs">
+      <DependentUpon>frmCHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmCL.Designer.cs">
+      <DependentUpon>frmCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmDList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmDList.Designer.cs">
+      <DependentUpon>frmDList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmFL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmFL.Designer.cs">
+      <DependentUpon>frmFL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmTB.Designer.cs">
+      <DependentUpon>frmTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCF.Designer.cs">
+      <DependentUpon>frmVCF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVLFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVLFA.Designer.cs">
+      <DependentUpon>frmVLFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVLP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVLP.Designer.cs">
+      <DependentUpon>frmVLP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVPR.Designer.cs">
+      <DependentUpon>frmVPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVU.Designer.cs">
+      <DependentUpon>frmVU.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
