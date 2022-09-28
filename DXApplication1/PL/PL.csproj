@@ -60,6 +60,150 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sub\btnBCACreerOrdreAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\btnBCACreerOrdreAchat.Designer.cs">
+      <DependentUpon>btnBCACreerOrdreAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\btnBCAListeOrdreAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\btnBCAListeOrdreAchat.Designer.cs">
+      <DependentUpon>btnBCAListeOrdreAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\btnBCVCreerBonComande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\btnBCVCreerBonComande.Designer.cs">
+      <DependentUpon>btnBCVCreerBonComande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\btnBCVListeBonCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\btnBCVListeBonCommande.Designer.cs">
+      <DependentUpon>btnBCVListeBonCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmACreerAvoirFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmACreerAvoirFournisseur.Designer.cs">
+      <DependentUpon>frmACreerAvoirFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmACreerFactureAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmACreerFactureAchat.Designer.cs">
+      <DependentUpon>frmACreerFactureAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAFactureAchatRecurrente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAFactureAchatRecurrente.Designer.cs">
+      <DependentUpon>frmAFactureAchatRecurrente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAjouterClient.Designer.cs">
+      <DependentUpon>frmAjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAjouterFournisseurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAjouterFournisseurs.Designer.cs">
+      <DependentUpon>frmAjouterFournisseurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAListeAvoirFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAListeAvoirFournisseur.Designer.cs">
+      <DependentUpon>frmAListeAvoirFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAListeFactureAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAListeFactureAchat.Designer.cs">
+      <DependentUpon>frmAListeFactureAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCreerFacturesAvoir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCreerFacturesAvoir.Designer.cs">
+      <DependentUpon>frmVCreerFacturesAvoir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCreerNoteDebit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCreerNoteDebit.Designer.cs">
+      <DependentUpon>frmVCreerNoteDebit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVFactureRepetitive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVFactureRepetitive.Designer.cs">
+      <DependentUpon>frmVFactureRepetitive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVListeFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVListeFacture.Designer.cs">
+      <DependentUpon>frmVListeFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmCreerDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmCreerDevis.Designer.cs">
+      <DependentUpon>frmCreerDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmFHistoriqueRemboursement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmFHistoriqueRemboursement.Designer.cs">
+      <DependentUpon>frmFHistoriqueRemboursement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmHistoriqueRemboursement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmHistoriqueRemboursement.Designer.cs">
+      <DependentUpon>frmHistoriqueRemboursement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmListClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmListClient.Designer.cs">
+      <DependentUpon>frmListClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmListeDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmListeDevis.Designer.cs">
+      <DependentUpon>frmListeDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmListeFournisseurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmListeFournisseurs.Designer.cs">
+      <DependentUpon>frmListeFournisseurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmTableauBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmTableauBord.Designer.cs">
+      <DependentUpon>frmTableauBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVCreerFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVCreerFacture.Designer.cs">
+      <DependentUpon>frmVCreerFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmVListeFacturesAvoir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmVListeFacturesAvoir.Designer.cs">
+      <DependentUpon>frmVListeFacturesAvoir.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,9 +228,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sub\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8_speed_36px.png" />
   </ItemGroup>

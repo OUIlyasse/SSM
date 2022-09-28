@@ -16,5 +16,14 @@ namespace PL.Main
         {
             InitializeComponent();
         }
+
+        private void btnAfficheFactureAvoir_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnVCFA_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
