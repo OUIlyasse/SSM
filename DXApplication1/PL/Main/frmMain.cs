@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Tools;
+using PL.Sub;
 
 namespace PL.Main
 {
@@ -29,6 +30,13 @@ namespace PL.Main
 
         private void btnCHitoriqueRembour_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnParamSos_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+            frmParamSos frm = new frmParamSos();
+            iTools.OpenForm(frm, pnlMain);
         }
     }
 }

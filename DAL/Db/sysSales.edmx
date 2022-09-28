@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="sysSalesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="sysSalesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Banque">
           <Key>
             <PropertyRef Name="ban_Code" />
@@ -333,6 +333,7 @@
           <Property Name="entr_Email" Type="nvarchar(max)" />
           <Property Name="entr_Whatsapp" Type="nvarchar(max)" />
           <Property Name="entr_Fax" Type="nvarchar" MaxLength="50" />
+          <Property Name="entr_Status" Type="bit" />
           <Property Name="entr_Note" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Facture_Achat">
@@ -957,16 +958,6 @@
           <Property Name="esp_C_Code" Type="nchar" MaxLength="100" />
           <Property Name="ban_C_Code" Type="nchar" MaxLength="100" />
           <Property Name="loc_C_Code" Type="nchar" MaxLength="100" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="Traitement">
           <Key>
@@ -2439,6 +2430,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="Select_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="sysSalesModelStoreContainer">
           <EntitySet Name="Banque" EntityType="Self.Banque" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Bon_Destruction" EntityType="Self.Bon_Destruction" Schema="dbo" store:Type="Tables" />
@@ -2504,7 +2496,6 @@
           <EntitySet Name="Recu_Achat" EntityType="Self.Recu_Achat" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Recu_Type" EntityType="Self.Recu_Type" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Recu_Vente" EntityType="Self.Recu_Vente" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Traitement" EntityType="Self.Traitement" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Unite_Mesure" EntityType="Self.Unite_Mesure" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Unite_Type" EntityType="Self.Unite_Type" Schema="dbo" store:Type="Tables" />
@@ -2989,8 +2980,7 @@
             <End Role="Unite_Type" EntitySet="Unite_Type" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="sysSalesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -3401,6 +3391,7 @@
           <Property Name="entr_Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="entr_Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Branche" Relationship="Self.FK_Branche_Entreprise_Info" FromRole="Entreprise_Info" ToRole="Branche" />
+          <Property Name="entr_Status" Type="Boolean" />
         </EntityType>
         <EntityType Name="Facture_Achat">
           <Key>
@@ -4169,16 +4160,6 @@
           <NavigationProperty Name="Facture_Vente" Relationship="Self.FK_Recu_Vente_Facture_Vente" FromRole="Recu_Vente" ToRole="Facture_Vente" />
           <NavigationProperty Name="Operation_Recu_Vente" Relationship="Self.FK_Operation_Recu_Vente_Recu_Vente" FromRole="Recu_Vente" ToRole="Operation_Recu_Vente" />
           <NavigationProperty Name="Recu_Type" Relationship="Self.FK_Recu_Vente_Recu_Type" FromRole="Recu_Vente" ToRole="Recu_Type" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Traitement">
           <Key>
@@ -5733,7 +5714,6 @@
           <EntitySet Name="Recu_Achat" EntityType="Self.Recu_Achat" />
           <EntitySet Name="Recu_Type" EntityType="Self.Recu_Type" />
           <EntitySet Name="Recu_Vente" EntityType="Self.Recu_Vente" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="Traitement" EntityType="Self.Traitement" />
           <EntitySet Name="Unite_Mesure" EntityType="Self.Unite_Mesure" />
           <EntitySet Name="Unite_Type" EntityType="Self.Unite_Type" />
@@ -6217,7 +6197,23 @@
             <End Role="Unite_Mesure" EntitySet="Unite_Mesure" />
             <End Role="Unite_Type" EntitySet="Unite_Type" />
           </AssociationSet>
+          <FunctionImport Name="Select_Entreprise_Info" ReturnType="Collection(sysSalesModel.Select_Entreprise_Info_Result)" />
         </EntityContainer>
+        <ComplexType Name="Select_Entreprise_Info_Result">
+          <Property Type="String" Name="entr_Code" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="entr_Nom" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="entr_Adresse" Nullable="true" />
+          <Property Type="String" Name="entr_Ville" Nullable="true" />
+          <Property Type="String" Name="entr_Pays" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="entr_Code_Postal" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="entr_Tele1" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="entr_Tele2" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="entr_Email" Nullable="true" />
+          <Property Type="String" Name="entr_Whatsapp" Nullable="true" />
+          <Property Type="String" Name="entr_Fax" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="entr_Note" Nullable="true" />
+          <Property Type="Boolean" Name="entr_Status" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -6564,6 +6560,7 @@
           <EntitySetMapping Name="Entreprise_Info">
             <EntityTypeMapping TypeName="sysSalesModel.Entreprise_Info">
               <MappingFragment StoreEntitySet="Entreprise_Info">
+                <ScalarProperty Name="entr_Status" ColumnName="entr_Status" />
                 <ScalarProperty Name="entr_Code" ColumnName="entr_Code" />
                 <ScalarProperty Name="entr_Nom" ColumnName="entr_Nom" />
                 <ScalarProperty Name="entr_Adresse" ColumnName="entr_Adresse" />
@@ -7241,17 +7238,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="sysSalesModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Traitement">
             <EntityTypeMapping TypeName="sysSalesModel.Traitement">
               <MappingFragment StoreEntitySet="Traitement">
@@ -7286,6 +7272,25 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Select_Entreprise_Info" FunctionName="sysSalesModel.Store.Select_Entreprise_Info">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="sysSalesModel.Select_Entreprise_Info_Result">
+                <ScalarProperty Name="entr_Code" ColumnName="entr_Code" />
+                <ScalarProperty Name="entr_Nom" ColumnName="entr_Nom" />
+                <ScalarProperty Name="entr_Adresse" ColumnName="entr_Adresse" />
+                <ScalarProperty Name="entr_Ville" ColumnName="entr_Ville" />
+                <ScalarProperty Name="entr_Pays" ColumnName="entr_Pays" />
+                <ScalarProperty Name="entr_Code_Postal" ColumnName="entr_Code_Postal" />
+                <ScalarProperty Name="entr_Tele1" ColumnName="entr_Tele1" />
+                <ScalarProperty Name="entr_Tele2" ColumnName="entr_Tele2" />
+                <ScalarProperty Name="entr_Email" ColumnName="entr_Email" />
+                <ScalarProperty Name="entr_Whatsapp" ColumnName="entr_Whatsapp" />
+                <ScalarProperty Name="entr_Fax" ColumnName="entr_Fax" />
+                <ScalarProperty Name="entr_Note" ColumnName="entr_Note" />
+                <ScalarProperty Name="entr_Status" ColumnName="entr_Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

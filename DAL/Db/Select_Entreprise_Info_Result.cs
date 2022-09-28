@@ -10,16 +10,9 @@
 namespace DAL.Db
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Entreprise_Info
+    public partial class Select_Entreprise_Info_Result
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Entreprise_Info()
-        {
-            this.Branche = new HashSet<Branche>();
-        }
-    
         public string entr_Code { get; set; }
         public string entr_Nom { get; set; }
         public string entr_Adresse { get; set; }
@@ -33,8 +26,5 @@ namespace DAL.Db
         public string entr_Fax { get; set; }
         public string entr_Note { get; set; }
         public Nullable<bool> entr_Status { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Branche> Branche { get; set; }
     }
 }

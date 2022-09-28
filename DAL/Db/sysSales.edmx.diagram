@@ -69,7 +69,6 @@
         <EntityTypeShape EntityType="sysSalesModel.Recu_Achat" Width="1.5" PointX="10.5" PointY="87.625" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Recu_Type" Width="1.5" PointX="8.25" PointY="63.625" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Recu_Vente" Width="1.5" PointX="10.5" PointY="52" IsExpanded="true" />
-        <EntityTypeShape EntityType="sysSalesModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Traitement" Width="1.5" PointX="3.75" PointY="3.375" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Unite_Mesure" Width="1.5" PointX="0.75" PointY="32" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Unite_Type" Width="1.5" PointX="3" PointY="73.25" IsExpanded="true" />

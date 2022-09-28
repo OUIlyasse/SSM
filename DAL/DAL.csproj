@@ -243,7 +243,7 @@
     <Compile Include="Db\Recu_Vente.cs">
       <DependentUpon>sysSales.tt</DependentUpon>
     </Compile>
-    <Compile Include="Db\sysdiagrams.cs">
+    <Compile Include="Db\Select_Entreprise_Info_Result.cs">
       <DependentUpon>sysSales.tt</DependentUpon>
     </Compile>
     <Compile Include="Db\sysSales.Context.cs">

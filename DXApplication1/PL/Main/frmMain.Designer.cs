@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.Container = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -167,7 +167,7 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
-            this.fluentDesignFormContainer1.SuspendLayout();
+            this.Container.SuspendLayout();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -175,15 +175,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // fluentDesignFormContainer1
+            // Container
             // 
-            this.fluentDesignFormContainer1.Controls.Add(this.pnlMain);
-            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(315, 46);
-            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(4);
-            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(869, 672);
-            this.fluentDesignFormContainer1.TabIndex = 0;
+            this.Container.Controls.Add(this.pnlMain);
+            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Container.Location = new System.Drawing.Point(315, 46);
+            this.Container.Margin = new System.Windows.Forms.Padding(4);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(869, 672);
+            this.Container.TabIndex = 0;
             // 
             // pnlMain
             // 
@@ -619,7 +619,6 @@
             this.accordionControlElement91,
             this.accordionControlElement97,
             this.accordionControlElement105});
-            this.GRapport.Expanded = true;
             this.GRapport.ImageOptions.Image = global::PL.Properties.Resources.icons8_ratings_36px;
             this.GRapport.Name = "GRapport";
             this.GRapport.Text = "Rapports";
@@ -1036,7 +1035,6 @@
             // 
             this.GContabilite.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnCPC});
-            this.GContabilite.Expanded = true;
             this.GContabilite.ImageOptions.Image = global::PL.Properties.Resources.icons8_accounting_36px;
             this.GContabilite.Name = "GContabilite";
             this.GContabilite.Text = "Comptabilité";
@@ -1071,6 +1069,7 @@
             this.btnParamSos.Name = "btnParamSos";
             this.btnParamSos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnParamSos.Text = "Sociétés";
+            this.btnParamSos.Click += new System.EventHandler(this.btnParamSos_Click);
             // 
             // btnParamCU
             // 
@@ -1218,8 +1217,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 752);
-            this.ControlContainer = this.fluentDesignFormContainer1;
-            this.Controls.Add(this.fluentDesignFormContainer1);
+            this.ControlContainer = this.Container;
+            this.Controls.Add(this.Container);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -1235,7 +1234,7 @@
             this.Text = "SSM";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.fluentDesignFormContainer1.ResumeLayout(false);
+            this.Container.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
@@ -1247,7 +1246,7 @@
         }
 
         #endregion
-        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer Container;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTB;

@@ -13,9 +13,19 @@ namespace PL.iSub
 {
     public partial class iFrm : DevExpress.XtraEditors.XtraForm
     {
+        #region Codes
+        public virtual void LoadData()
+        {
+        }
+        #endregion Codes
         public iFrm()
         {
             InitializeComponent();
+        }
+
+        private void iFrm_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

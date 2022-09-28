@@ -83,6 +83,16 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_user_group_man_man_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_add_user_group_man_man_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bank_building_36px {
             get {
                 object obj = ResourceManager.GetObject("icons8_bank_building_36px", resourceCulture);
@@ -123,6 +133,26 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_file_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_delete_file_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_file_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_edit_file_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_estimate_36px {
             get {
                 object obj = ResourceManager.GetObject("icons8_estimate_36px", resourceCulture);
@@ -143,6 +173,26 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_new_copy_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_new_copy_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Plus_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Plus_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_product_36px {
             get {
                 object obj = ResourceManager.GetObject("icons8_product_36px", resourceCulture);
@@ -156,6 +206,16 @@ namespace PL.Properties {
         internal static System.Drawing.Bitmap icons8_ratings_36px {
             get {
                 object obj = ResourceManager.GetObject("icons8_ratings_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_registration_36px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_registration_36px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

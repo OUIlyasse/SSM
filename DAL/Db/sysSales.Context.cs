@@ -12,6 +12,8 @@ namespace DAL.Db
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class sysSalesEntities : DbContext
     {
@@ -89,9 +91,13 @@ namespace DAL.Db
         public virtual DbSet<Recu_Achat> Recu_Achat { get; set; }
         public virtual DbSet<Recu_Type> Recu_Type { get; set; }
         public virtual DbSet<Recu_Vente> Recu_Vente { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Traitement> Traitement { get; set; }
         public virtual DbSet<Unite_Mesure> Unite_Mesure { get; set; }
         public virtual DbSet<Unite_Type> Unite_Type { get; set; }
+    
+        public virtual ObjectResult<Select_Entreprise_Info_Result> Select_Entreprise_Info()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Select_Entreprise_Info_Result>("Select_Entreprise_Info");
+        }
     }
 }
