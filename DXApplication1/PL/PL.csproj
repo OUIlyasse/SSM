@@ -67,6 +67,12 @@
     <Compile Include="iSub\iFrm.Designer.cs">
       <DependentUpon>iFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="iSub\iFrmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iSub\iFrmList.Designer.cs">
+      <DependentUpon>iFrmList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -314,6 +320,12 @@
     </Compile>
     <Compile Include="Sub\frmParamSos.Designer.cs">
       <DependentUpon>frmParamSos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmParamSosNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmParamSosNew.Designer.cs">
+      <DependentUpon>frmParamSosNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Sub\frmParamSys.cs">
       <SubType>Form</SubType>
@@ -648,6 +660,9 @@
     <EmbeddedResource Include="iSub\iFrm.resx">
       <DependentUpon>iFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="iSub\iFrmList.resx">
+      <DependentUpon>iFrmList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -664,6 +679,9 @@
     </Compile>
     <EmbeddedResource Include="Sub\frmParamSos.resx">
       <DependentUpon>frmParamSos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub\frmParamSosNew.resx">
+      <DependentUpon>frmParamSosNew.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

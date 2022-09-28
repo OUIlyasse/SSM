@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crud\iData.cs" />
     <Compile Include="Db\Banque.cs">
       <DependentUpon>sysSales.tt</DependentUpon>
     </Compile>

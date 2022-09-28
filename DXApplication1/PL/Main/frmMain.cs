@@ -35,7 +35,7 @@ namespace PL.Main
         private void btnParamSos_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
-            frmParamSos frm = new frmParamSos();
+            frmParamSos frm = new frmParamSos(this);
             iTools.OpenForm(frm, pnlMain);
         }
     }
