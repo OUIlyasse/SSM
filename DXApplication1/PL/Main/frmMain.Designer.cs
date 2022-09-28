@@ -161,7 +161,7 @@
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(315, 46);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(575, 549);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(869, 706);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // accordionControl1
@@ -191,7 +191,7 @@
             this.accordionControl1.OptionsMinimizing.NormalWidth = 252;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(315, 549);
+            this.accordionControl1.Size = new System.Drawing.Size(315, 706);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -285,7 +285,6 @@
             this.GFacture.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.GFV,
             this.GFA});
-            this.GFacture.Expanded = true;
             this.GFacture.ImageOptions.Image = global::PL.Properties.Resources.icons8_bill_36px;
             this.GFacture.Name = "GFacture";
             this.GFacture.Text = "Factures";
@@ -564,6 +563,7 @@
             // 
             // GBanque
             // 
+            this.GBanque.Expanded = true;
             this.GBanque.ImageOptions.Image = global::PL.Properties.Resources.icons8_bank_building_36px;
             this.GBanque.Name = "GBanque";
             this.GBanque.Text = "Banques";
@@ -578,6 +578,7 @@
             this.accordionControlElement91,
             this.accordionControlElement97,
             this.accordionControlElement105});
+            this.GRapport.Expanded = true;
             this.GRapport.ImageOptions.Image = global::PL.Properties.Resources.icons8_ratings_36px;
             this.GRapport.Name = "GRapport";
             this.GRapport.Text = "Rapports";
@@ -591,7 +592,6 @@
             this.btnVComm,
             this.btnVF,
             this.btnVPR});
-            this.GRVente.Expanded = true;
             this.GRVente.Name = "GRVente";
             this.GRVente.Text = "Ventes";
             // 
@@ -641,7 +641,6 @@
             this.btnDReF,
             this.btnDRVU,
             this.btnDRC});
-            this.accordionControlElement61.Expanded = true;
             this.accordionControlElement61.Name = "accordionControlElement61";
             this.accordionControlElement61.Text = "Débiteurs";
             // 
@@ -699,7 +698,6 @@
             this.btnPROA,
             this.btnPReOA,
             this.btnPRF});
-            this.accordionControlElement69.Expanded = true;
             this.accordionControlElement69.Name = "accordionControlElement69";
             this.accordionControlElement69.Text = "Payable";
             // 
@@ -771,7 +769,6 @@
             this.btnPHRF,
             this.btnPRAF,
             this.btnPreAF});
-            this.accordionControlElement79.Expanded = true;
             this.accordionControlElement79.Name = "accordionControlElement79";
             this.accordionControlElement79.Text = "Paiements";
             // 
@@ -849,7 +846,6 @@
             this.btnDClt,
             this.btnDPF,
             this.btnDDC});
-            this.accordionControlElement91.Expanded = true;
             this.accordionControlElement91.Name = "accordionControlElement91";
             this.accordionControlElement91.Text = "\r\nDépenses\r\n";
             // 
@@ -999,6 +995,7 @@
             // 
             this.GContabilite.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnCPC});
+            this.GContabilite.Expanded = true;
             this.GContabilite.ImageOptions.Image = global::PL.Properties.Resources.icons8_accounting_36px;
             this.GContabilite.Name = "GContabilite";
             this.GContabilite.Text = "Comptabilité";
@@ -1017,6 +1014,7 @@
             this.btnParamCU,
             this.btnParamConfig,
             this.btnParamImExp});
+            this.GParametre.Expanded = true;
             this.GParametre.ImageOptions.Image = global::PL.Properties.Resources.icons8_settings_36px;
             this.GParametre.Name = "GParametre";
             this.GParametre.Text = "Paramètres";
@@ -1058,7 +1056,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(890, 46);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1184, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -1066,14 +1064,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 595);
+            this.ClientSize = new System.Drawing.Size(1184, 752);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(906, 603);
+            this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "frmMain";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
