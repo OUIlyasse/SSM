@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule6 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule7 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.txtNote = new DevExpress.XtraEditors.MemoEdit();
@@ -56,6 +63,8 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.vpText = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -85,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vpText)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -134,6 +144,7 @@
             this.lnkLogo.StyleController = this.layoutControl1;
             this.lnkLogo.TabIndex = 10;
             this.lnkLogo.Text = "* Choisir Logo d\'Entreprise";
+            this.lnkLogo.Click += new System.EventHandler(this.lnkLogo_Click);
             // 
             // txtEmail
             // 
@@ -145,6 +156,9 @@
             this.txtEmail.Size = new System.Drawing.Size(684, 28);
             this.txtEmail.StyleController = this.layoutControl1;
             this.txtEmail.TabIndex = 9;
+            conditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule6.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtEmail, conditionValidationRule6);
             // 
             // txtFax
             // 
@@ -185,6 +199,9 @@
             this.txtTele.Size = new System.Drawing.Size(259, 28);
             this.txtTele.StyleController = this.layoutControl1;
             this.txtTele.TabIndex = 5;
+            conditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule7.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtTele, conditionValidationRule7);
             // 
             // txtCodePostale
             // 
@@ -407,9 +424,13 @@
             "Zambie",
             "Zimbabwe",
             "Îles Marshall"});
+            this.cmbxPays.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbxPays.Size = new System.Drawing.Size(259, 28);
             this.cmbxPays.StyleController = this.layoutControl1;
             this.cmbxPays.TabIndex = 4;
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.cmbxPays, conditionValidationRule1);
             // 
             // txtVille
             // 
@@ -418,6 +439,9 @@
             this.txtVille.Size = new System.Drawing.Size(684, 28);
             this.txtVille.StyleController = this.layoutControl1;
             this.txtVille.TabIndex = 2;
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtVille, conditionValidationRule2);
             // 
             // txtAdresse
             // 
@@ -426,6 +450,9 @@
             this.txtAdresse.Size = new System.Drawing.Size(684, 28);
             this.txtAdresse.StyleController = this.layoutControl1;
             this.txtAdresse.TabIndex = 1;
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtAdresse, conditionValidationRule3);
             // 
             // txtEntreprise
             // 
@@ -434,6 +461,9 @@
             this.txtEntreprise.Size = new System.Drawing.Size(684, 28);
             this.txtEntreprise.StyleController = this.layoutControl1;
             this.txtEntreprise.TabIndex = 0;
+            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule4.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtEntreprise, conditionValidationRule4);
             // 
             // Root
             // 
@@ -596,6 +626,10 @@
             this.emptySpaceItem1.Size = new System.Drawing.Size(850, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // ofd
+            // 
+            this.ofd.RestoreDirectory = true;
+            // 
             // frmPSocieteAjouter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -605,6 +639,7 @@
             this.IconOptions.Image = global::PL.Properties.Resources.icons8_company_32px;
             this.Name = "frmPSocieteAjouter";
             this.Text = "Ajouter une Société";
+            this.Load += new System.EventHandler(this.frmPSocieteAjouter_Load);
             this.Controls.SetChildIndex(this.groupControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -635,6 +670,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vpText)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -669,5 +705,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private System.Windows.Forms.OpenFileDialog ofd;
+        private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider vpText;
     }
 }

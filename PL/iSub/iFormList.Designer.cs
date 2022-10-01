@@ -55,7 +55,7 @@
             this.Name = "iFormList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.iFormList_Load);
+            this.Activated += new System.EventHandler(this.iFormList_Activated);
             this.ResumeLayout(false);
 
         }

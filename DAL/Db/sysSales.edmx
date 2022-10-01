@@ -2433,6 +2433,7 @@
         </Association>
         <Function Name="Delete_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+          <Parameter Name="entr_Status" Type="bit" Mode="In" />
         </Function>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
         <Function Name="Insert_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -6272,6 +6273,7 @@
           <FunctionImport Name="Select_Entreprise_Info" ReturnType="Collection(sysSalesModel.Select_Entreprise_Info_Result)" />
           <FunctionImport Name="Delete_Entreprise_Info">
           <Parameter Name="entr_Code" Mode="In" Type="String" />
+            <Parameter Name="entr_Status" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="Insert_Entreprise_Info">
             <Parameter Name="entr_Code" Mode="In" Type="String" />
@@ -6722,6 +6724,7 @@
                   <ScalarProperty Name="entr_Code" ParameterName="entr_Code" Version="Current" />
                 </UpdateFunction>
                 <DeleteFunction FunctionName="sysSalesModel.Store.Delete_Entreprise_Info">
+                  <ScalarProperty Name="entr_Status" ParameterName="entr_Status" />
                   <ScalarProperty Name="entr_Code" ParameterName="entr_Code" />
                 </DeleteFunction>
               </ModificationFunctionMapping>

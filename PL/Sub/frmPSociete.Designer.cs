@@ -32,12 +32,12 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gcSos = new DevExpress.XtraGrid.GridControl();
             this.gvSos = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gcNom = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcAdresse = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcVille = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcPays = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -93,25 +93,7 @@
             this.gvSos.GridControl = this.gcSos;
             this.gvSos.Name = "gvSos";
             this.gvSos.OptionsBehavior.Editable = false;
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(968, 207);
-            this.Root.TextVisible = false;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.gcSos;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(948, 187);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.gvSos.DoubleClick += new System.EventHandler(this.gvSos_DoubleClick);
             // 
             // gcNom
             // 
@@ -153,6 +135,25 @@
             this.gcPays.VisibleIndex = 3;
             this.gcPays.Width = 94;
             // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(968, 207);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.gcSos;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(948, 187);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
             // frmPSociete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -179,7 +180,6 @@
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraGrid.GridControl gcSos;
         private DevExpress.XtraGrid.Views.Grid.GridView gvSos;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
@@ -187,5 +187,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gcAdresse;
         private DevExpress.XtraGrid.Columns.GridColumn gcVille;
         private DevExpress.XtraGrid.Columns.GridColumn gcPays;
+        public DevExpress.XtraGrid.GridControl gcSos;
     }
 }

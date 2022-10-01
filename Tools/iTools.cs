@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Tools
@@ -15,21 +16,38 @@ namespace Tools
         {
             return DateTime.Now;
         }
-        public static void msgBox(string msg)
+        public static DialogResult msgBox(string msg)
         {
-            XtraMessageBox.Show(msg);
+            return XtraMessageBox.Show(msg);
         }
-        public static void msgBox(string msg, string title)
+        public static DialogResult msgBox(string msg, string title)
         {
-            XtraMessageBox.Show(msg, title, MessageBoxButtons.OK);
+            return XtraMessageBox.Show(msg, title, MessageBoxButtons.OK);
         }
-        public static void msgBox(string msg, string title, MessageBoxButtons button)
+        public static DialogResult msgBox(string msg, string title, MessageBoxButtons button)
         {
-            XtraMessageBox.Show(msg, title, button);
+            return XtraMessageBox.Show(msg, title, button);
         }
-        public static void msgBox(string msg, string title, MessageBoxButtons button, MessageBoxIcon icon)
+        public static DialogResult msgBox(string msg, string title, MessageBoxButtons button, MessageBoxIcon icon)
         {
-            XtraMessageBox.Show(msg, title, button, icon);
+            return XtraMessageBox.Show(msg, title, button, icon);
+        }
+        public static byte[] ReadFile(string sPath)
+        {
+            byte[] data = null;
+            try
+            {
+                FileInfo fInfo = new FileInfo(sPath);
+                long numBytes = fInfo.Length;
+                FileStream fStream = new FileStream(sPath, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fStream);
+                data = br.ReadBytes((int)numBytes);
+            }
+            catch (Exception ex)
+            {
+                msgBox(ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return data;
         }
     }
 }
