@@ -26,6 +26,7 @@ namespace PL.Sub
         public override void OpenForm()
         {
             frmPSocieteAjouter frm = new frmPSocieteAjouter();
+            frm.Text = "Ajouter une Sosiètè";
             frm.ShowDialog();
         }
         #endregion Override

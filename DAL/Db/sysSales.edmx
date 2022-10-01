@@ -334,6 +334,7 @@
           <Property Name="entr_Whatsapp" Type="nvarchar(max)" />
           <Property Name="entr_Fax" Type="nvarchar" MaxLength="50" />
           <Property Name="entr_Status" Type="bit" />
+          <Property Name="entr_Logo" Type="image" />
           <Property Name="entr_Note" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Facture_Achat">
@@ -2430,7 +2431,77 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="Delete_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="Insert_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+          <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Adresse" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Ville" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Pays" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Code_Postal" Type="nchar" Mode="In" />
+          <Parameter Name="entr_Tele1" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Tele2" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Email" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Whatsapp" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Fax" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Status" Type="bit" Mode="In" />
+          <Parameter Name="entr_Logo" Type="image" Mode="In" />
+          <Parameter Name="entr_Note" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="MaxID_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Select_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_Entreprise_Info_By_Name" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Update_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+          <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Adresse" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Ville" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Pays" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Code_Postal" Type="nchar" Mode="In" />
+          <Parameter Name="entr_Tele1" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Tele2" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Email" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Whatsapp" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Fax" Type="nvarchar" Mode="In" />
+          <Parameter Name="entr_Status" Type="bit" Mode="In" />
+          <Parameter Name="entr_Logo" Type="image" Mode="In" />
+          <Parameter Name="entr_Note" Type="nvarchar(max)" Mode="In" />
+        </Function>
         <EntityContainer Name="sysSalesModelStoreContainer">
           <EntitySet Name="Banque" EntityType="Self.Banque" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Bon_Destruction" EntityType="Self.Bon_Destruction" Schema="dbo" store:Type="Tables" />
@@ -3392,6 +3463,7 @@
           <Property Name="entr_Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Branche" Relationship="Self.FK_Branche_Entreprise_Info" FromRole="Entreprise_Info" ToRole="Branche" />
           <Property Name="entr_Status" Type="Boolean" />
+          <Property Name="entr_Logo" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Facture_Achat">
           <Key>
@@ -6198,6 +6270,45 @@
             <End Role="Unite_Type" EntitySet="Unite_Type" />
           </AssociationSet>
           <FunctionImport Name="Select_Entreprise_Info" ReturnType="Collection(sysSalesModel.Select_Entreprise_Info_Result)" />
+          <FunctionImport Name="Delete_Entreprise_Info">
+          <Parameter Name="entr_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Insert_Entreprise_Info">
+            <Parameter Name="entr_Code" Mode="In" Type="String" />
+            <Parameter Name="entr_Nom" Mode="In" Type="String" />
+            <Parameter Name="entr_Adresse" Mode="In" Type="String" />
+            <Parameter Name="entr_Ville" Mode="In" Type="String" />
+            <Parameter Name="entr_Pays" Mode="In" Type="String" />
+            <Parameter Name="entr_Code_Postal" Mode="In" Type="String" />
+            <Parameter Name="entr_Tele1" Mode="In" Type="String" />
+            <Parameter Name="entr_Tele2" Mode="In" Type="String" />
+            <Parameter Name="entr_Email" Mode="In" Type="String" />
+            <Parameter Name="entr_Whatsapp" Mode="In" Type="String" />
+            <Parameter Name="entr_Fax" Mode="In" Type="String" />
+            <Parameter Name="entr_Status" Mode="In" Type="Boolean" />
+            <Parameter Name="entr_Logo" Mode="In" Type="Binary" />
+            <Parameter Name="entr_Note" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Select_Entreprise_Info_By_Name" EntitySet="Entreprise_Info" ReturnType="Collection(sysSalesModel.Entreprise_Info)">
+          <Parameter Name="entr_Nom" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Update_Entreprise_Info">
+            <Parameter Name="entr_Code" Mode="In" Type="String" />
+            <Parameter Name="entr_Nom" Mode="In" Type="String" />
+            <Parameter Name="entr_Adresse" Mode="In" Type="String" />
+            <Parameter Name="entr_Ville" Mode="In" Type="String" />
+            <Parameter Name="entr_Pays" Mode="In" Type="String" />
+            <Parameter Name="entr_Code_Postal" Mode="In" Type="String" />
+            <Parameter Name="entr_Tele1" Mode="In" Type="String" />
+            <Parameter Name="entr_Tele2" Mode="In" Type="String" />
+            <Parameter Name="entr_Email" Mode="In" Type="String" />
+            <Parameter Name="entr_Whatsapp" Mode="In" Type="String" />
+            <Parameter Name="entr_Fax" Mode="In" Type="String" />
+            <Parameter Name="entr_Status" Mode="In" Type="Boolean" />
+            <Parameter Name="entr_Logo" Mode="In" Type="Binary" />
+            <Parameter Name="entr_Note" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="MaxID_Entreprise_Info" ReturnType="Collection(Int32)" />
         </EntityContainer>
         <ComplexType Name="Select_Entreprise_Info_Result">
           <Property Type="String" Name="entr_Code" Nullable="false" MaxLength="100" />
@@ -6560,6 +6671,7 @@
           <EntitySetMapping Name="Entreprise_Info">
             <EntityTypeMapping TypeName="sysSalesModel.Entreprise_Info">
               <MappingFragment StoreEntitySet="Entreprise_Info">
+                <ScalarProperty Name="entr_Logo" ColumnName="entr_Logo" />
                 <ScalarProperty Name="entr_Status" ColumnName="entr_Status" />
                 <ScalarProperty Name="entr_Code" ColumnName="entr_Code" />
                 <ScalarProperty Name="entr_Nom" ColumnName="entr_Nom" />
@@ -6574,6 +6686,45 @@
                 <ScalarProperty Name="entr_Fax" ColumnName="entr_Fax" />
                 <ScalarProperty Name="entr_Note" ColumnName="entr_Note" />
               </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="sysSalesModel.Entreprise_Info">
+              <ModificationFunctionMapping>
+                <InsertFunction FunctionName="sysSalesModel.Store.Insert_Entreprise_Info">
+                  <ScalarProperty Name="entr_Note" ParameterName="entr_Note" />
+                  <ScalarProperty Name="entr_Logo" ParameterName="entr_Logo" />
+                  <ScalarProperty Name="entr_Status" ParameterName="entr_Status" />
+                  <ScalarProperty Name="entr_Fax" ParameterName="entr_Fax" />
+                  <ScalarProperty Name="entr_Whatsapp" ParameterName="entr_Whatsapp" />
+                  <ScalarProperty Name="entr_Email" ParameterName="entr_Email" />
+                  <ScalarProperty Name="entr_Tele2" ParameterName="entr_Tele2" />
+                  <ScalarProperty Name="entr_Tele1" ParameterName="entr_Tele1" />
+                  <ScalarProperty Name="entr_Code_Postal" ParameterName="entr_Code_Postal" />
+                  <ScalarProperty Name="entr_Pays" ParameterName="entr_Pays" />
+                  <ScalarProperty Name="entr_Ville" ParameterName="entr_Ville" />
+                  <ScalarProperty Name="entr_Adresse" ParameterName="entr_Adresse" />
+                  <ScalarProperty Name="entr_Nom" ParameterName="entr_Nom" />
+                  <ScalarProperty Name="entr_Code" ParameterName="entr_Code" />
+                </InsertFunction>
+                <UpdateFunction FunctionName="sysSalesModel.Store.Update_Entreprise_Info">
+                  <ScalarProperty Name="entr_Note" ParameterName="entr_Note" Version="Current" />
+                  <ScalarProperty Name="entr_Logo" ParameterName="entr_Logo" Version="Current" />
+                  <ScalarProperty Name="entr_Status" ParameterName="entr_Status" Version="Current" />
+                  <ScalarProperty Name="entr_Fax" ParameterName="entr_Fax" Version="Current" />
+                  <ScalarProperty Name="entr_Whatsapp" ParameterName="entr_Whatsapp" Version="Current" />
+                  <ScalarProperty Name="entr_Email" ParameterName="entr_Email" Version="Current" />
+                  <ScalarProperty Name="entr_Tele2" ParameterName="entr_Tele2" Version="Current" />
+                  <ScalarProperty Name="entr_Tele1" ParameterName="entr_Tele1" Version="Current" />
+                  <ScalarProperty Name="entr_Code_Postal" ParameterName="entr_Code_Postal" Version="Current" />
+                  <ScalarProperty Name="entr_Pays" ParameterName="entr_Pays" Version="Current" />
+                  <ScalarProperty Name="entr_Ville" ParameterName="entr_Ville" Version="Current" />
+                  <ScalarProperty Name="entr_Adresse" ParameterName="entr_Adresse" Version="Current" />
+                  <ScalarProperty Name="entr_Nom" ParameterName="entr_Nom" Version="Current" />
+                  <ScalarProperty Name="entr_Code" ParameterName="entr_Code" Version="Current" />
+                </UpdateFunction>
+                <DeleteFunction FunctionName="sysSalesModel.Store.Delete_Entreprise_Info">
+                  <ScalarProperty Name="entr_Code" ParameterName="entr_Code" />
+                </DeleteFunction>
+              </ModificationFunctionMapping>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Facture_Achat">
@@ -7291,6 +7442,11 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Delete_Entreprise_Info" FunctionName="sysSalesModel.Store.Delete_Entreprise_Info" />
+          <FunctionImportMapping FunctionImportName="Insert_Entreprise_Info" FunctionName="sysSalesModel.Store.Insert_Entreprise_Info" />
+          <FunctionImportMapping FunctionImportName="Select_Entreprise_Info_By_Name" FunctionName="sysSalesModel.Store.Select_Entreprise_Info_By_Name" />
+          <FunctionImportMapping FunctionImportName="Update_Entreprise_Info" FunctionName="sysSalesModel.Store.Update_Entreprise_Info" />
+          <FunctionImportMapping FunctionImportName="MaxID_Entreprise_Info" FunctionName="sysSalesModel.Store.MaxID_Entreprise_Info" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

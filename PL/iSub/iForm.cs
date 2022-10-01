@@ -1,4 +1,6 @@
-﻿namespace PL.iSub
+﻿using DevExpress.XtraEditors;
+
+namespace PL.iSub
 {
     public partial class iForm : DevExpress.XtraEditors.XtraForm
     {
@@ -11,6 +13,21 @@
         }
         public virtual void Delete_Data()
         {
+        }
+        public virtual void verifyButtons(XtraForm f, string txt)
+        {
+            if (f.Text == txt)
+            {
+                btnAdd.Enabled = true;
+                btnDelete.Enabled = false;
+                btnUpdate.Enabled = false;
+            }
+            else
+            {
+                btnAdd.Enabled = false;
+                btnDelete.Enabled = true;
+                btnUpdate.Enabled = true;
+            }
         }
         #endregion Codes
         public iForm()
@@ -31,6 +48,11 @@
         private void btnDelete_Click(object sender, System.EventArgs e)
         {
             Delete_Data();
+        }
+
+        private void iForm_Load(object sender, System.EventArgs e)
+        {
+            verifyButtons(new XtraForm(), "");
         }
     }
 }

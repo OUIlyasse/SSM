@@ -146,6 +146,10 @@
       <Project>{3E18D9ED-F8BF-4E8A-AFBC-B86E06F2A538}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{D5EDF100-11CD-42AC-B325-469A3C207DE4}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_delete_file_32px.png" />

@@ -91,6 +91,7 @@
             this.MinimizeBox = false;
             this.Name = "iForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.iForm_Load);
             this.ResumeLayout(false);
 
         }

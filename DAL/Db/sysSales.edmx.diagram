@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1f0cd13baf744ad9838b536e931bc92c" Name="Diagram1">
+      <Diagram DiagramId="1f0cd13baf744ad9838b536e931bc92c" Name="Diagram1" ZoomLevel="95">
         <EntityTypeShape EntityType="sysSalesModel.Banque" Width="1.5" PointX="6" PointY="100" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Bon_Destruction" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
         <EntityTypeShape EntityType="sysSalesModel.Bon_Destruction_Produit" Width="1.5" PointX="5.25" PointY="32.375" IsExpanded="true" />
