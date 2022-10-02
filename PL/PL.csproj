@@ -160,6 +160,93 @@
   <ItemGroup>
     <None Include="Resources\icons8_new_copy_32px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_male_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-historique-des-commandes-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-liste-de-vérification-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_supplier_36px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Cheque_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bill_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nouveau-fichier-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bill_36px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-faire-défiler-36%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ordre-d%27achat-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-liste-des-ingrédients-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-historique-des-activités-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-liste-de-vérification-361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-le-reçu-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facture-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-compte-marchand-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dette-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-support-informatique-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paramètres-administrateur-homme-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-livre-d&amp;#39%3bhistoire-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-comptabilité-36%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-100-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-entrepôt-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pièces-de-monnaie-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-produit-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-product-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-alertes-google-36.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
