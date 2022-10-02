@@ -325,7 +325,6 @@
             // 
             this.btnSocietes.Caption = "Sociétés";
             this.btnSocietes.Id = 1;
-            this.btnSocietes.ImageOptions.Image = global::PL.Properties.Resources.icons8_company_32px;
             this.btnSocietes.Name = "btnSocietes";
             this.btnSocietes.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnSocietes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSocietes_ItemClick);
@@ -399,7 +398,7 @@
             // 
             this.btnCHistoriqueRemboursement.Caption = "Historique Remboursement";
             this.btnCHistoriqueRemboursement.Id = 11;
-            this.btnCHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_des_commandes_36;
+            this.btnCHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_de_paiement_36;
             this.btnCHistoriqueRemboursement.Name = "btnCHistoriqueRemboursement";
             this.btnCHistoriqueRemboursement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -407,7 +406,6 @@
             // 
             this.btnFVoir.Caption = "Voir Fournisseurs";
             this.btnFVoir.Id = 12;
-            this.btnFVoir.ImageOptions.Image = global::PL.Properties.Resources.icons8_liste_de_vérification_36;
             this.btnFVoir.Name = "btnFVoir";
             this.btnFVoir.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -415,7 +413,6 @@
             // 
             this.btnFAjouter.Caption = "Ajouter Fournisseur";
             this.btnFAjouter.Id = 13;
-            this.btnFAjouter.ImageOptions.Image = global::PL.Properties.Resources.icons8_supplier_36px_1;
             this.btnFAjouter.Name = "btnFAjouter";
             this.btnFAjouter.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -423,7 +420,6 @@
             // 
             this.btnFHistoriqueRemboursement.Caption = "Historique Remboursement";
             this.btnFHistoriqueRemboursement.Id = 14;
-            this.btnFHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_Cheque_36px;
             this.btnFHistoriqueRemboursement.Name = "btnFHistoriqueRemboursement";
             this.btnFHistoriqueRemboursement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -431,7 +427,6 @@
             // 
             this.btnDListe.Caption = "Liste Devis";
             this.btnDListe.Id = 15;
-            this.btnDListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_bill_36px;
             this.btnDListe.Name = "btnDListe";
             this.btnDListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -439,7 +434,6 @@
             // 
             this.btnDCreer.Caption = "Créer Devis";
             this.btnDCreer.Id = 16;
-            this.btnDCreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_nouveau_fichier_36;
             this.btnDCreer.Name = "btnDCreer";
             this.btnDCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -447,7 +441,6 @@
             // 
             this.btnFVListe.Caption = "Liste Factures";
             this.btnFVListe.Id = 17;
-            this.btnFVListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_bill_36px_1;
             this.btnFVListe.Name = "btnFVListe";
             this.btnFVListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -455,7 +448,6 @@
             // 
             this.btnFVCreer.Caption = "Créer Facture";
             this.btnFVCreer.Id = 18;
-            this.btnFVCreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_nouveau_fichier_36;
             this.btnFVCreer.Name = "btnFVCreer";
             this.btnFVCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -463,7 +455,6 @@
             // 
             this.btnFVRepetitives.Caption = "Factures Répétitives";
             this.btnFVRepetitives.Id = 19;
-            this.btnFVRepetitives.ImageOptions.Image = global::PL.Properties.Resources.icons8_faire_défiler_36_1_;
             this.btnFVRepetitives.Name = "btnFVRepetitives";
             this.btnFVRepetitives.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -483,7 +474,6 @@
             // 
             this.btnFAListe.Caption = "Liste Factures d\'achat";
             this.btnFAListe.Id = 22;
-            this.btnFAListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_ordre_d_achat_36;
             this.btnFAListe.Name = "btnFAListe";
             this.btnFAListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -491,7 +481,6 @@
             // 
             this.btnFACreer.Caption = "Créer Facture Achat";
             this.btnFACreer.Id = 23;
-            this.btnFACreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_ajouter_36;
             this.btnFACreer.Name = "btnFACreer";
             this.btnFACreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -507,7 +496,6 @@
             // 
             this.btnFAListeAvoirsFournisseur.Caption = "Liste Avoirs Fournisseur";
             this.btnFAListeAvoirsFournisseur.Id = 26;
-            this.btnFAListeAvoirsFournisseur.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_des_activités_36;
             this.btnFAListeAvoirsFournisseur.Name = "btnFAListeAvoirsFournisseur";
             this.btnFAListeAvoirsFournisseur.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -523,7 +511,6 @@
             // 
             this.btnBCVListe.Caption = "Liste Bons de Commande";
             this.btnBCVListe.Id = 28;
-            this.btnBCVListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_le_reçu_36;
             this.btnBCVListe.Name = "btnBCVListe";
             this.btnBCVListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -531,7 +518,6 @@
             // 
             this.btnBCVCreer.Caption = "Créer Bon de Commande";
             this.btnBCVCreer.Id = 29;
-            this.btnBCVCreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_ajouter_36;
             this.btnBCVCreer.Name = "btnBCVCreer";
             this.btnBCVCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -539,7 +525,6 @@
             // 
             this.btnBCAListeOA.Caption = "Liste Ordre d\'chats";
             this.btnBCAListeOA.Id = 30;
-            this.btnBCAListeOA.ImageOptions.Image = global::PL.Properties.Resources.icons8_facture_36;
             this.btnBCAListeOA.Name = "btnBCAListeOA";
             this.btnBCAListeOA.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -547,7 +532,6 @@
             // 
             this.btnBCACreerOA.Caption = "Créer Ordre d\'achat";
             this.btnBCACreerOA.Id = 31;
-            this.btnBCACreerOA.ImageOptions.Image = global::PL.Properties.Resources.icons8_nouveau_fichier_36;
             this.btnBCACreerOA.Name = "btnBCACreerOA";
             this.btnBCACreerOA.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -587,21 +571,18 @@
             // 
             this.btnAAjouter.Caption = "Ajouter  Article";
             this.btnAAjouter.Id = 38;
-            this.btnAAjouter.ImageOptions.Image = global::PL.Properties.Resources.icons8_add_product_36;
             this.btnAAjouter.Name = "btnAAjouter";
             // 
             // btnAAlertesInventaire
             // 
             this.btnAAlertesInventaire.Caption = "Voir Alertes Inventaire";
             this.btnAAlertesInventaire.Id = 39;
-            this.btnAAlertesInventaire.ImageOptions.Image = global::PL.Properties.Resources.icons8_alertes_google_36;
             this.btnAAlertesInventaire.Name = "btnAAlertesInventaire";
             // 
             // btnAListePrix
             // 
             this.btnAListePrix.Caption = "Liste des prix";
             this.btnAListePrix.Id = 40;
-            this.btnAListePrix.ImageOptions.Image = global::PL.Properties.Resources.icons8_pièces_de_monnaie_36;
             this.btnAListePrix.Name = "btnAListePrix";
             this.btnAListePrix.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -617,7 +598,6 @@
             // 
             this.btnACreerEntrepots.Caption = "Créer Entrepôts";
             this.btnACreerEntrepots.Id = 42;
-            this.btnACreerEntrepots.ImageOptions.Image = global::PL.Properties.Resources.icons8_ajouter_36;
             this.btnACreerEntrepots.Name = "btnACreerEntrepots";
             this.btnACreerEntrepots.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -625,7 +605,6 @@
             // 
             this.btnDepVoir.Caption = "Voir Dépenses";
             this.btnDepVoir.Id = 45;
-            this.btnDepVoir.ImageOptions.Image = global::PL.Properties.Resources.icons8_dette_36;
             this.btnDepVoir.Name = "btnDepVoir";
             this.btnDepVoir.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -659,7 +638,6 @@
             // 
             this.btnCPlanComptable.Caption = "Plan Comptable";
             this.btnCPlanComptable.Id = 50;
-            this.btnCPlanComptable.ImageOptions.Image = global::PL.Properties.Resources.icons8_comptabilité_36_1_;
             this.btnCPlanComptable.Name = "btnCPlanComptable";
             this.btnCPlanComptable.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -667,7 +645,6 @@
             // 
             this.btnCCreer.Caption = "Créer un compte";
             this.btnCCreer.Id = 51;
-            this.btnCCreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_100_36;
             this.btnCCreer.Name = "btnCCreer";
             this.btnCCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -675,7 +652,6 @@
             // 
             this.btnCGrandLivre.Caption = "Grand Livre";
             this.btnCGrandLivre.Id = 52;
-            this.btnCGrandLivre.ImageOptions.Image = global::PL.Properties.Resources.icons8_livre_d__39_histoire_36;
             this.btnCGrandLivre.Name = "btnCGrandLivre";
             this.btnCGrandLivre.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -683,7 +659,6 @@
             // 
             this.btnPSysteme.Caption = "Système";
             this.btnPSysteme.Id = 53;
-            this.btnPSysteme.ImageOptions.Image = global::PL.Properties.Resources.icons8_support_informatique_36;
             this.btnPSysteme.Name = "btnPSysteme";
             this.btnPSysteme.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -691,7 +666,6 @@
             // 
             this.btnPUtilisateurs.Caption = "Compte Utilisateurs";
             this.btnPUtilisateurs.Id = 54;
-            this.btnPUtilisateurs.ImageOptions.Image = global::PL.Properties.Resources.icons8_paramètres_administrateur_homme_36;
             this.btnPUtilisateurs.Name = "btnPUtilisateurs";
             this.btnPUtilisateurs.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
