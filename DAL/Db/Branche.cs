@@ -32,13 +32,14 @@ namespace DAL.Db
         public string bran_Code { get; set; }
         public string bran_Nom { get; set; }
         public string bran_Adresse { get; set; }
-        public string bran_Adresse2 { get; set; }
         public string bran_Tele { get; set; }
         public string bran_Mobile { get; set; }
         public Nullable<System.DateTime> bran_Date_Creation { get; set; }
         public Nullable<bool> bran_Status { get; set; }
         public string bran_Note { get; set; }
         public string entr_Code { get; set; }
+        public string bran_Ville { get; set; }
+        public string bran_Pays { get; set; }
     
         public virtual Entreprise_Info Entreprise_Info { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

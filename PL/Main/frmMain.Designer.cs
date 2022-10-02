@@ -638,6 +638,7 @@
             this.btnAEntrepots.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAEntrepots.ImageOptions.Image")));
             this.btnAEntrepots.Name = "btnAEntrepots";
             this.btnAEntrepots.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnAEntrepots.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAEntrepots_ItemClick);
             // 
             // btnACreerEntrepots
             // 

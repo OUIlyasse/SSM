@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule6 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule7 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule5 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule6 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.txtNote = new DevExpress.XtraEditors.MemoEdit();
@@ -99,6 +99,9 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Controls.Add(this.layoutControl1);
             this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.groupControl1.Location = new System.Drawing.Point(12, 88);
@@ -156,9 +159,9 @@
             this.txtEmail.Size = new System.Drawing.Size(684, 28);
             this.txtEmail.StyleController = this.layoutControl1;
             this.txtEmail.TabIndex = 9;
-            conditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule6.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.txtEmail, conditionValidationRule6);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtEmail, conditionValidationRule1);
             // 
             // txtFax
             // 
@@ -199,9 +202,9 @@
             this.txtTele.Size = new System.Drawing.Size(259, 28);
             this.txtTele.StyleController = this.layoutControl1;
             this.txtTele.TabIndex = 5;
-            conditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule7.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.txtTele, conditionValidationRule7);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtTele, conditionValidationRule2);
             // 
             // txtCodePostale
             // 
@@ -428,9 +431,9 @@
             this.cmbxPays.Size = new System.Drawing.Size(259, 28);
             this.cmbxPays.StyleController = this.layoutControl1;
             this.cmbxPays.TabIndex = 4;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.cmbxPays, conditionValidationRule1);
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.cmbxPays, conditionValidationRule3);
             // 
             // txtVille
             // 
@@ -439,9 +442,9 @@
             this.txtVille.Size = new System.Drawing.Size(684, 28);
             this.txtVille.StyleController = this.layoutControl1;
             this.txtVille.TabIndex = 2;
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule2.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.txtVille, conditionValidationRule2);
+            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule4.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtVille, conditionValidationRule4);
             // 
             // txtAdresse
             // 
@@ -450,9 +453,9 @@
             this.txtAdresse.Size = new System.Drawing.Size(684, 28);
             this.txtAdresse.StyleController = this.layoutControl1;
             this.txtAdresse.TabIndex = 1;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.txtAdresse, conditionValidationRule3);
+            conditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule5.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtAdresse, conditionValidationRule5);
             // 
             // txtEntreprise
             // 
@@ -461,9 +464,9 @@
             this.txtEntreprise.Size = new System.Drawing.Size(684, 28);
             this.txtEntreprise.StyleController = this.layoutControl1;
             this.txtEntreprise.TabIndex = 0;
-            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule4.ErrorText = "Ce champ est vide";
-            this.vpText.SetValidationRule(this.txtEntreprise, conditionValidationRule4);
+            conditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule6.ErrorText = "Ce champ est vide";
+            this.vpText.SetValidationRule(this.txtEntreprise, conditionValidationRule6);
             // 
             // Root
             // 

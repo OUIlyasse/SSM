@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'E:\VS15\SSM\DAL\Db\sysSales.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'E:\Git_15\SSM\DAL\Db\sysSales.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.

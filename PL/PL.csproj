@@ -85,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sub\frmAEntrepots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAEntrepots.Designer.cs">
+      <DependentUpon>frmAEntrepots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub\frmAEntrepotsAjouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub\frmAEntrepotsAjouter.Designer.cs">
+      <DependentUpon>frmAEntrepotsAjouter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sub\frmPSociete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sub\frmAEntrepots.resx">
+      <DependentUpon>frmAEntrepots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub\frmAEntrepotsAjouter.resx">
+      <DependentUpon>frmAEntrepotsAjouter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sub\frmPSociete.resx">
       <DependentUpon>frmPSociete.cs</DependentUpon>
     </EmbeddedResource>

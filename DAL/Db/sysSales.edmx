@@ -114,9 +114,10 @@
             <PropertyRef Name="bran_Code" />
           </Key>
           <Property Name="bran_Code" Type="nchar" MaxLength="100" Nullable="false" />
-          <Property Name="bran_Nom" Type="nvarchar" MaxLength="50" />
+          <Property Name="bran_Nom" Type="nvarchar" MaxLength="200" />
           <Property Name="bran_Adresse" Type="nvarchar(max)" />
-          <Property Name="bran_Adresse2" Type="nvarchar(max)" />
+          <Property Name="bran_Ville" Type="nvarchar(max)" />
+          <Property Name="bran_Pays" Type="nvarchar(max)" />
           <Property Name="bran_Tele" Type="nchar" MaxLength="20" />
           <Property Name="bran_Mobile" Type="nchar" MaxLength="20" />
           <Property Name="bran_Date_Creation" Type="date" />
@@ -2431,11 +2432,32 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="Delete_Branche" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bran_Code" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Delete_Branche_Completely" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bran_Code" Type="nchar" Mode="In" />
+        </Function>
         <Function Name="Delete_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="entr_Code" Type="nchar" Mode="In" />
-          <Parameter Name="entr_Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="Delete_Entreprise_Info_Completely" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
         </Function>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="Insert_Branche" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bran_Code" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Nom" Type="nvarchar" Mode="In" />
+          <Parameter Name="bran_Adresse" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Ville" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Pays" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Tele" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Mobile" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Date_Creation" Type="date" Mode="In" />
+          <Parameter Name="bran_Status" Type="bit" Mode="In" />
+          <Parameter Name="bran_Note" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+        </Function>
         <Function Name="Insert_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="entr_Code" Type="nchar" Mode="In" />
           <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
@@ -2452,7 +2474,12 @@
           <Parameter Name="entr_Logo" Type="image" Mode="In" />
           <Parameter Name="entr_Note" Type="nvarchar(max)" Mode="In" />
         </Function>
+        <Function Name="MaxID_Branche" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="MaxID_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_Branche" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_Branche_By_Name" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bran_Nom" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="Select_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="Select_Entreprise_Info_By_Name" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
@@ -2487,6 +2514,19 @@
           <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Update_Branche" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="bran_Code" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Nom" Type="nvarchar" Mode="In" />
+          <Parameter Name="bran_Adresse" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Ville" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Pays" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="bran_Tele" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Mobile" Type="nchar" Mode="In" />
+          <Parameter Name="bran_Date_Creation" Type="date" Mode="In" />
+          <Parameter Name="bran_Status" Type="bit" Mode="In" />
+          <Parameter Name="bran_Note" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="entr_Code" Type="nchar" Mode="In" />
+        </Function>
         <Function Name="Update_Entreprise_Info" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="entr_Code" Type="nchar" Mode="In" />
           <Parameter Name="entr_Nom" Type="nvarchar" Mode="In" />
@@ -3188,9 +3228,8 @@
             <PropertyRef Name="bran_Code" />
           </Key>
           <Property Name="bran_Code" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="bran_Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bran_Nom" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="bran_Adresse" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="bran_Adresse2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="bran_Tele" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="bran_Mobile" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="bran_Date_Creation" Type="DateTime" Precision="0" />
@@ -3208,6 +3247,8 @@
           <NavigationProperty Name="Operation_Facture_Vente_Retour" Relationship="Self.FK_Operation_Facture_Vente_Retour_Branche" FromRole="Branche" ToRole="Operation_Facture_Vente_Retour" />
           <NavigationProperty Name="Operation_Recu_Achat" Relationship="Self.FK_Operation_Recu_Achat_Branche" FromRole="Branche" ToRole="Operation_Recu_Achat" />
           <NavigationProperty Name="Operation_Recu_Vente" Relationship="Self.FK_Operation_Recu_Vente_Branche" FromRole="Branche" ToRole="Operation_Recu_Vente" />
+          <Property Name="bran_Ville" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="bran_Pays" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Charge">
           <Key>
@@ -6273,7 +6314,6 @@
           <FunctionImport Name="Select_Entreprise_Info" ReturnType="Collection(sysSalesModel.Select_Entreprise_Info_Result)" />
           <FunctionImport Name="Delete_Entreprise_Info">
           <Parameter Name="entr_Code" Mode="In" Type="String" />
-            <Parameter Name="entr_Status" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="Insert_Entreprise_Info">
             <Parameter Name="entr_Code" Mode="In" Type="String" />
@@ -6311,6 +6351,46 @@
             <Parameter Name="entr_Note" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="MaxID_Entreprise_Info" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="Delete_Branche">
+          <Parameter Name="bran_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Delete_Branche_Completely">
+          <Parameter Name="bran_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Delete_Entreprise_Info_Completely">
+          <Parameter Name="entr_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Insert_Branche">
+            <Parameter Name="bran_Code" Mode="In" Type="String" />
+            <Parameter Name="bran_Nom" Mode="In" Type="String" />
+            <Parameter Name="bran_Adresse" Mode="In" Type="String" />
+            <Parameter Name="bran_Ville" Mode="In" Type="String" />
+            <Parameter Name="bran_Pays" Mode="In" Type="String" />
+            <Parameter Name="bran_Tele" Mode="In" Type="String" />
+            <Parameter Name="bran_Mobile" Mode="In" Type="String" />
+            <Parameter Name="bran_Date_Creation" Mode="In" Type="DateTime" />
+            <Parameter Name="bran_Status" Mode="In" Type="Boolean" />
+            <Parameter Name="bran_Note" Mode="In" Type="String" />
+            <Parameter Name="entr_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Select_Branche" ReturnType="Collection(sysSalesModel.Select_Branche_Result)" />
+          <FunctionImport Name="Select_Branche_By_Name" EntitySet="Branche" ReturnType="Collection(sysSalesModel.Branche)">
+          <Parameter Name="bran_Nom" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Update_Branche">
+            <Parameter Name="bran_Code" Mode="In" Type="String" />
+            <Parameter Name="bran_Nom" Mode="In" Type="String" />
+            <Parameter Name="bran_Adresse" Mode="In" Type="String" />
+            <Parameter Name="bran_Ville" Mode="In" Type="String" />
+            <Parameter Name="bran_Pays" Mode="In" Type="String" />
+            <Parameter Name="bran_Tele" Mode="In" Type="String" />
+            <Parameter Name="bran_Mobile" Mode="In" Type="String" />
+            <Parameter Name="bran_Date_Creation" Mode="In" Type="DateTime" />
+            <Parameter Name="bran_Status" Mode="In" Type="Boolean" />
+            <Parameter Name="bran_Note" Mode="In" Type="String" />
+            <Parameter Name="entr_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="MaxID_Branche" ReturnType="Collection(Int32)" />
         </EntityContainer>
         <ComplexType Name="Select_Entreprise_Info_Result">
           <Property Type="String" Name="entr_Code" Nullable="false" MaxLength="100" />
@@ -6326,6 +6406,32 @@
           <Property Type="String" Name="entr_Fax" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="entr_Note" Nullable="true" />
           <Property Type="Boolean" Name="entr_Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Select_Branche_Result">
+          <Property Type="String" Name="bran_Code" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="bran_Nom" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="bran_Adresse" Nullable="true" />
+          <Property Type="String" Name="bran_Ville" Nullable="true" />
+          <Property Type="String" Name="bran_Pays" Nullable="true" />
+          <Property Type="String" Name="bran_Tele" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="bran_Mobile" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="bran_Date_Creation" Nullable="true" />
+          <Property Type="Boolean" Name="bran_Status" Nullable="true" />
+          <Property Type="String" Name="bran_Note" Nullable="true" />
+          <Property Type="String" Name="entr_Code" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="Select_Branche_By_Name_Result">
+          <Property Type="String" Name="bran_Code" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="bran_Nom" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="bran_Adresse" Nullable="true" />
+          <Property Type="String" Name="bran_Ville" Nullable="true" />
+          <Property Type="String" Name="bran_Pays" Nullable="true" />
+          <Property Type="String" Name="bran_Tele" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="bran_Mobile" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="bran_Date_Creation" Nullable="true" />
+          <Property Type="Boolean" Name="bran_Status" Nullable="true" />
+          <Property Type="String" Name="bran_Note" Nullable="true" />
+          <Property Type="String" Name="entr_Code" Nullable="true" MaxLength="100" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -6448,10 +6554,11 @@
           <EntitySetMapping Name="Branche">
             <EntityTypeMapping TypeName="sysSalesModel.Branche">
               <MappingFragment StoreEntitySet="Branche">
+                <ScalarProperty Name="bran_Pays" ColumnName="bran_Pays" />
+                <ScalarProperty Name="bran_Ville" ColumnName="bran_Ville" />
                 <ScalarProperty Name="bran_Code" ColumnName="bran_Code" />
                 <ScalarProperty Name="bran_Nom" ColumnName="bran_Nom" />
                 <ScalarProperty Name="bran_Adresse" ColumnName="bran_Adresse" />
-                <ScalarProperty Name="bran_Adresse2" ColumnName="bran_Adresse2" />
                 <ScalarProperty Name="bran_Tele" ColumnName="bran_Tele" />
                 <ScalarProperty Name="bran_Mobile" ColumnName="bran_Mobile" />
                 <ScalarProperty Name="bran_Date_Creation" ColumnName="bran_Date_Creation" />
@@ -6459,6 +6566,39 @@
                 <ScalarProperty Name="bran_Note" ColumnName="bran_Note" />
                 <ScalarProperty Name="entr_Code" ColumnName="entr_Code" />
               </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="sysSalesModel.Branche">
+              <ModificationFunctionMapping>
+                <InsertFunction FunctionName="sysSalesModel.Store.Insert_Branche">
+                  <ScalarProperty Name="entr_Code" ParameterName="entr_Code" />
+                  <ScalarProperty Name="bran_Note" ParameterName="bran_Note" />
+                  <ScalarProperty Name="bran_Status" ParameterName="bran_Status" />
+                  <ScalarProperty Name="bran_Date_Creation" ParameterName="bran_Date_Creation" />
+                  <ScalarProperty Name="bran_Mobile" ParameterName="bran_Mobile" />
+                  <ScalarProperty Name="bran_Tele" ParameterName="bran_Tele" />
+                  <ScalarProperty Name="bran_Pays" ParameterName="bran_Pays" />
+                  <ScalarProperty Name="bran_Ville" ParameterName="bran_Ville" />
+                  <ScalarProperty Name="bran_Adresse" ParameterName="bran_Adresse" />
+                  <ScalarProperty Name="bran_Nom" ParameterName="bran_Nom" />
+                  <ScalarProperty Name="bran_Code" ParameterName="bran_Code" />
+                </InsertFunction>
+                <UpdateFunction FunctionName="sysSalesModel.Store.Update_Branche">
+                  <ScalarProperty Name="entr_Code" ParameterName="entr_Code" Version="Current" />
+                  <ScalarProperty Name="bran_Note" ParameterName="bran_Note" Version="Current" />
+                  <ScalarProperty Name="bran_Status" ParameterName="bran_Status" Version="Current" />
+                  <ScalarProperty Name="bran_Date_Creation" ParameterName="bran_Date_Creation" Version="Current" />
+                  <ScalarProperty Name="bran_Mobile" ParameterName="bran_Mobile" Version="Current" />
+                  <ScalarProperty Name="bran_Tele" ParameterName="bran_Tele" Version="Current" />
+                  <ScalarProperty Name="bran_Pays" ParameterName="bran_Pays" Version="Current" />
+                  <ScalarProperty Name="bran_Ville" ParameterName="bran_Ville" Version="Current" />
+                  <ScalarProperty Name="bran_Adresse" ParameterName="bran_Adresse" Version="Current" />
+                  <ScalarProperty Name="bran_Nom" ParameterName="bran_Nom" Version="Current" />
+                  <ScalarProperty Name="bran_Code" ParameterName="bran_Code" Version="Current" />
+                </UpdateFunction>
+                <DeleteFunction FunctionName="sysSalesModel.Store.Delete_Branche">
+                  <ScalarProperty Name="bran_Code" ParameterName="bran_Code" />
+                </DeleteFunction>
+              </ModificationFunctionMapping>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Charge">
@@ -6724,7 +6864,6 @@
                   <ScalarProperty Name="entr_Code" ParameterName="entr_Code" Version="Current" />
                 </UpdateFunction>
                 <DeleteFunction FunctionName="sysSalesModel.Store.Delete_Entreprise_Info">
-                  <ScalarProperty Name="entr_Status" ParameterName="entr_Status" />
                   <ScalarProperty Name="entr_Code" ParameterName="entr_Code" />
                 </DeleteFunction>
               </ModificationFunctionMapping>
@@ -7450,6 +7589,31 @@
           <FunctionImportMapping FunctionImportName="Select_Entreprise_Info_By_Name" FunctionName="sysSalesModel.Store.Select_Entreprise_Info_By_Name" />
           <FunctionImportMapping FunctionImportName="Update_Entreprise_Info" FunctionName="sysSalesModel.Store.Update_Entreprise_Info" />
           <FunctionImportMapping FunctionImportName="MaxID_Entreprise_Info" FunctionName="sysSalesModel.Store.MaxID_Entreprise_Info" />
+          <FunctionImportMapping FunctionImportName="Delete_Branche" FunctionName="sysSalesModel.Store.Delete_Branche" />
+          <FunctionImportMapping FunctionImportName="Delete_Branche_Completely" FunctionName="sysSalesModel.Store.Delete_Branche_Completely" />
+          <FunctionImportMapping FunctionImportName="Delete_Entreprise_Info_Completely" FunctionName="sysSalesModel.Store.Delete_Entreprise_Info_Completely" />
+          <FunctionImportMapping FunctionImportName="Insert_Branche" FunctionName="sysSalesModel.Store.Insert_Branche" />
+          <FunctionImportMapping FunctionImportName="Select_Branche" FunctionName="sysSalesModel.Store.Select_Branche">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="sysSalesModel.Select_Branche_Result">
+                <ScalarProperty Name="bran_Code" ColumnName="bran_Code" />
+                <ScalarProperty Name="bran_Nom" ColumnName="bran_Nom" />
+                <ScalarProperty Name="bran_Adresse" ColumnName="bran_Adresse" />
+                <ScalarProperty Name="bran_Ville" ColumnName="bran_Ville" />
+                <ScalarProperty Name="bran_Pays" ColumnName="bran_Pays" />
+                <ScalarProperty Name="bran_Tele" ColumnName="bran_Tele" />
+                <ScalarProperty Name="bran_Mobile" ColumnName="bran_Mobile" />
+                <ScalarProperty Name="bran_Date_Creation" ColumnName="bran_Date_Creation" />
+                <ScalarProperty Name="bran_Status" ColumnName="bran_Status" />
+                <ScalarProperty Name="bran_Note" ColumnName="bran_Note" />
+                <ScalarProperty Name="entr_Code" ColumnName="entr_Code" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Select_Branche_By_Name" FunctionName="sysSalesModel.Store.Select_Branche_By_Name">
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Update_Branche" FunctionName="sysSalesModel.Store.Update_Branche" />
+          <FunctionImportMapping FunctionImportName="MaxID_Branche" FunctionName="sysSalesModel.Store.MaxID_Branche" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

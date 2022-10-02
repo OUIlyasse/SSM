@@ -49,5 +49,8 @@ namespace Tools
             }
             return data;
         }
+        public static void Clear()
+        {
+        }
     }
 }

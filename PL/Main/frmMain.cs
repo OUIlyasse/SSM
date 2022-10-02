@@ -43,5 +43,11 @@ namespace PL.Main
             frmPSociete frm = new frmPSociete();
             OpenForm(frm);
         }
+
+        private void btnAEntrepots_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmAEntrepots frm = new frmAEntrepots();
+            OpenForm(frm);
+        }
     }
 }

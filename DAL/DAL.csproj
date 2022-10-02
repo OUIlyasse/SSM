@@ -244,6 +244,12 @@
     <Compile Include="Db\Recu_Vente.cs">
       <DependentUpon>sysSales.tt</DependentUpon>
     </Compile>
+    <Compile Include="Db\Select_Branche_By_Name_Result.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Select_Branche_Result.cs">
+      <DependentUpon>sysSales.tt</DependentUpon>
+    </Compile>
     <Compile Include="Db\Select_Entreprise_Info_Result.cs">
       <DependentUpon>sysSales.tt</DependentUpon>
     </Compile>

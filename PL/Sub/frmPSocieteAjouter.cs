@@ -123,7 +123,7 @@ namespace PL.Sub
                 {
                     try
                     {
-                        db.Delete_Entreprise_Info(code, false);
+                        db.Delete_Entreprise_Info(code);
                         db.SaveChanges();
                         transaction.Commit();
                         iTools.msgBox("votre société est bien supprimée", "Sucées", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,6 +141,7 @@ namespace PL.Sub
             }
         }
         #endregion Override
+
         public frmPSocieteAjouter(frmPSociete frm)
         {
             InitializeComponent();
@@ -178,7 +179,6 @@ namespace PL.Sub
                 return;
             }
         }
-
         private void frmPSocieteAjouter_Load(object sender, EventArgs e)
         {
             if (Text == "Ajouter une Sosiètè")

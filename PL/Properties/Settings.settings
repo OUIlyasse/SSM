@@ -5,5 +5,8 @@
     <Setting Name="codeSosiete" Type="System.String" Scope="User">
       <Value Profile="(Default)">SOS</Value>
     </Setting>
+    <Setting Name="codeEntropot" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BN</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

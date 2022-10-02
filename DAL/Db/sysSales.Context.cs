@@ -100,17 +100,13 @@ namespace DAL.Db
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Select_Entreprise_Info_Result>("Select_Entreprise_Info");
         }
     
-        public virtual int Delete_Entreprise_Info(string entr_Code, Nullable<bool> entr_Status)
+        public virtual int Delete_Entreprise_Info(string entr_Code)
         {
             var entr_CodeParameter = entr_Code != null ?
                 new ObjectParameter("entr_Code", entr_Code) :
                 new ObjectParameter("entr_Code", typeof(string));
     
-            var entr_StatusParameter = entr_Status.HasValue ?
-                new ObjectParameter("entr_Status", entr_Status) :
-                new ObjectParameter("entr_Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Delete_Entreprise_Info", entr_CodeParameter, entr_StatusParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Delete_Entreprise_Info", entr_CodeParameter);
         }
     
         public virtual int Insert_Entreprise_Info(string entr_Code, string entr_Nom, string entr_Adresse, string entr_Ville, string entr_Pays, string entr_Code_Postal, string entr_Tele1, string entr_Tele2, string entr_Email, string entr_Whatsapp, string entr_Fax, Nullable<bool> entr_Status, byte[] entr_Logo, string entr_Note)
@@ -256,6 +252,159 @@ namespace DAL.Db
         public virtual ObjectResult<Nullable<int>> MaxID_Entreprise_Info()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("MaxID_Entreprise_Info");
+        }
+    
+        public virtual int Delete_Branche(string bran_Code)
+        {
+            var bran_CodeParameter = bran_Code != null ?
+                new ObjectParameter("bran_Code", bran_Code) :
+                new ObjectParameter("bran_Code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Delete_Branche", bran_CodeParameter);
+        }
+    
+        public virtual int Delete_Branche_Completely(string bran_Code)
+        {
+            var bran_CodeParameter = bran_Code != null ?
+                new ObjectParameter("bran_Code", bran_Code) :
+                new ObjectParameter("bran_Code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Delete_Branche_Completely", bran_CodeParameter);
+        }
+    
+        public virtual int Delete_Entreprise_Info_Completely(string entr_Code)
+        {
+            var entr_CodeParameter = entr_Code != null ?
+                new ObjectParameter("entr_Code", entr_Code) :
+                new ObjectParameter("entr_Code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Delete_Entreprise_Info_Completely", entr_CodeParameter);
+        }
+    
+        public virtual int Insert_Branche(string bran_Code, string bran_Nom, string bran_Adresse, string bran_Ville, string bran_Pays, string bran_Tele, string bran_Mobile, Nullable<System.DateTime> bran_Date_Creation, Nullable<bool> bran_Status, string bran_Note, string entr_Code)
+        {
+            var bran_CodeParameter = bran_Code != null ?
+                new ObjectParameter("bran_Code", bran_Code) :
+                new ObjectParameter("bran_Code", typeof(string));
+    
+            var bran_NomParameter = bran_Nom != null ?
+                new ObjectParameter("bran_Nom", bran_Nom) :
+                new ObjectParameter("bran_Nom", typeof(string));
+    
+            var bran_AdresseParameter = bran_Adresse != null ?
+                new ObjectParameter("bran_Adresse", bran_Adresse) :
+                new ObjectParameter("bran_Adresse", typeof(string));
+    
+            var bran_VilleParameter = bran_Ville != null ?
+                new ObjectParameter("bran_Ville", bran_Ville) :
+                new ObjectParameter("bran_Ville", typeof(string));
+    
+            var bran_PaysParameter = bran_Pays != null ?
+                new ObjectParameter("bran_Pays", bran_Pays) :
+                new ObjectParameter("bran_Pays", typeof(string));
+    
+            var bran_TeleParameter = bran_Tele != null ?
+                new ObjectParameter("bran_Tele", bran_Tele) :
+                new ObjectParameter("bran_Tele", typeof(string));
+    
+            var bran_MobileParameter = bran_Mobile != null ?
+                new ObjectParameter("bran_Mobile", bran_Mobile) :
+                new ObjectParameter("bran_Mobile", typeof(string));
+    
+            var bran_Date_CreationParameter = bran_Date_Creation.HasValue ?
+                new ObjectParameter("bran_Date_Creation", bran_Date_Creation) :
+                new ObjectParameter("bran_Date_Creation", typeof(System.DateTime));
+    
+            var bran_StatusParameter = bran_Status.HasValue ?
+                new ObjectParameter("bran_Status", bran_Status) :
+                new ObjectParameter("bran_Status", typeof(bool));
+    
+            var bran_NoteParameter = bran_Note != null ?
+                new ObjectParameter("bran_Note", bran_Note) :
+                new ObjectParameter("bran_Note", typeof(string));
+    
+            var entr_CodeParameter = entr_Code != null ?
+                new ObjectParameter("entr_Code", entr_Code) :
+                new ObjectParameter("entr_Code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insert_Branche", bran_CodeParameter, bran_NomParameter, bran_AdresseParameter, bran_VilleParameter, bran_PaysParameter, bran_TeleParameter, bran_MobileParameter, bran_Date_CreationParameter, bran_StatusParameter, bran_NoteParameter, entr_CodeParameter);
+        }
+    
+        public virtual ObjectResult<Select_Branche_Result> Select_Branche()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Select_Branche_Result>("Select_Branche");
+        }
+    
+        public virtual ObjectResult<Branche> Select_Branche_By_Name(string bran_Nom)
+        {
+            var bran_NomParameter = bran_Nom != null ?
+                new ObjectParameter("bran_Nom", bran_Nom) :
+                new ObjectParameter("bran_Nom", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Branche>("Select_Branche_By_Name", bran_NomParameter);
+        }
+    
+        public virtual ObjectResult<Branche> Select_Branche_By_Name(string bran_Nom, MergeOption mergeOption)
+        {
+            var bran_NomParameter = bran_Nom != null ?
+                new ObjectParameter("bran_Nom", bran_Nom) :
+                new ObjectParameter("bran_Nom", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Branche>("Select_Branche_By_Name", mergeOption, bran_NomParameter);
+        }
+    
+        public virtual int Update_Branche(string bran_Code, string bran_Nom, string bran_Adresse, string bran_Ville, string bran_Pays, string bran_Tele, string bran_Mobile, Nullable<System.DateTime> bran_Date_Creation, Nullable<bool> bran_Status, string bran_Note, string entr_Code)
+        {
+            var bran_CodeParameter = bran_Code != null ?
+                new ObjectParameter("bran_Code", bran_Code) :
+                new ObjectParameter("bran_Code", typeof(string));
+    
+            var bran_NomParameter = bran_Nom != null ?
+                new ObjectParameter("bran_Nom", bran_Nom) :
+                new ObjectParameter("bran_Nom", typeof(string));
+    
+            var bran_AdresseParameter = bran_Adresse != null ?
+                new ObjectParameter("bran_Adresse", bran_Adresse) :
+                new ObjectParameter("bran_Adresse", typeof(string));
+    
+            var bran_VilleParameter = bran_Ville != null ?
+                new ObjectParameter("bran_Ville", bran_Ville) :
+                new ObjectParameter("bran_Ville", typeof(string));
+    
+            var bran_PaysParameter = bran_Pays != null ?
+                new ObjectParameter("bran_Pays", bran_Pays) :
+                new ObjectParameter("bran_Pays", typeof(string));
+    
+            var bran_TeleParameter = bran_Tele != null ?
+                new ObjectParameter("bran_Tele", bran_Tele) :
+                new ObjectParameter("bran_Tele", typeof(string));
+    
+            var bran_MobileParameter = bran_Mobile != null ?
+                new ObjectParameter("bran_Mobile", bran_Mobile) :
+                new ObjectParameter("bran_Mobile", typeof(string));
+    
+            var bran_Date_CreationParameter = bran_Date_Creation.HasValue ?
+                new ObjectParameter("bran_Date_Creation", bran_Date_Creation) :
+                new ObjectParameter("bran_Date_Creation", typeof(System.DateTime));
+    
+            var bran_StatusParameter = bran_Status.HasValue ?
+                new ObjectParameter("bran_Status", bran_Status) :
+                new ObjectParameter("bran_Status", typeof(bool));
+    
+            var bran_NoteParameter = bran_Note != null ?
+                new ObjectParameter("bran_Note", bran_Note) :
+                new ObjectParameter("bran_Note", typeof(string));
+    
+            var entr_CodeParameter = entr_Code != null ?
+                new ObjectParameter("entr_Code", entr_Code) :
+                new ObjectParameter("entr_Code", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Update_Branche", bran_CodeParameter, bran_NomParameter, bran_AdresseParameter, bran_VilleParameter, bran_PaysParameter, bran_TeleParameter, bran_MobileParameter, bran_Date_CreationParameter, bran_StatusParameter, bran_NoteParameter, entr_CodeParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> MaxID_Branche()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("MaxID_Branche");
         }
     }
 }
