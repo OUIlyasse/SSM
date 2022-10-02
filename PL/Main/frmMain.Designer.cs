@@ -406,6 +406,7 @@
             // 
             this.btnFVoir.Caption = "Voir Fournisseurs";
             this.btnFVoir.Id = 12;
+            this.btnFVoir.ImageOptions.Image = global::PL.Properties.Resources.icons8_users_36px;
             this.btnFVoir.Name = "btnFVoir";
             this.btnFVoir.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -413,6 +414,7 @@
             // 
             this.btnFAjouter.Caption = "Ajouter Fournisseur";
             this.btnFAjouter.Id = 13;
+            this.btnFAjouter.ImageOptions.Image = global::PL.Properties.Resources.icons8_supplier_36px_1;
             this.btnFAjouter.Name = "btnFAjouter";
             this.btnFAjouter.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -420,6 +422,7 @@
             // 
             this.btnFHistoriqueRemboursement.Caption = "Historique Remboursement";
             this.btnFHistoriqueRemboursement.Id = 14;
+            this.btnFHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_de_paiement_36;
             this.btnFHistoriqueRemboursement.Name = "btnFHistoriqueRemboursement";
             this.btnFHistoriqueRemboursement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
