@@ -325,6 +325,7 @@
             // 
             this.btnSocietes.Caption = "Sociétés";
             this.btnSocietes.Id = 1;
+            this.btnSocietes.ImageOptions.Image = global::PL.Properties.Resources.icons8_company_32px;
             this.btnSocietes.Name = "btnSocietes";
             this.btnSocietes.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnSocietes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSocietes_ItemClick);
@@ -362,12 +363,16 @@
             // 
             this.btnParametre.Caption = "Paramètre";
             this.btnParametre.Id = 6;
+            this.btnParametre.ImageOptions.Image = global::PL.Properties.Resources.icons8_paramètres_30;
             this.btnParametre.Name = "btnParametre";
+            this.btnParametre.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnLogOut
             // 
             this.btnLogOut.Caption = "Déconnection";
             this.btnLogOut.Id = 7;
+            this.btnLogOut.ImageOptions.Image = global::PL.Properties.Resources.icons8_déconnexion_30;
             this.btnLogOut.Name = "btnLogOut";
             // 
             // txtUser
@@ -398,7 +403,7 @@
             // 
             this.btnCHistoriqueRemboursement.Caption = "Historique Remboursement";
             this.btnCHistoriqueRemboursement.Id = 11;
-            this.btnCHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_de_paiement_36;
+            this.btnCHistoriqueRemboursement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCHistoriqueRemboursement.ImageOptions.Image")));
             this.btnCHistoriqueRemboursement.Name = "btnCHistoriqueRemboursement";
             this.btnCHistoriqueRemboursement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -422,7 +427,7 @@
             // 
             this.btnFHistoriqueRemboursement.Caption = "Historique Remboursement";
             this.btnFHistoriqueRemboursement.Id = 14;
-            this.btnFHistoriqueRemboursement.ImageOptions.Image = global::PL.Properties.Resources.icons8_historique_de_paiement_36;
+            this.btnFHistoriqueRemboursement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFHistoriqueRemboursement.ImageOptions.Image")));
             this.btnFHistoriqueRemboursement.Name = "btnFHistoriqueRemboursement";
             this.btnFHistoriqueRemboursement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -430,6 +435,7 @@
             // 
             this.btnDListe.Caption = "Liste Devis";
             this.btnDListe.Id = 15;
+            this.btnDListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_bill_36px;
             this.btnDListe.Name = "btnDListe";
             this.btnDListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -437,6 +443,7 @@
             // 
             this.btnDCreer.Caption = "Créer Devis";
             this.btnDCreer.Id = 16;
+            this.btnDCreer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDCreer.ImageOptions.Image")));
             this.btnDCreer.Name = "btnDCreer";
             this.btnDCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -444,6 +451,7 @@
             // 
             this.btnFVListe.Caption = "Liste Factures";
             this.btnFVListe.Id = 17;
+            this.btnFVListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_Cheque_36px;
             this.btnFVListe.Name = "btnFVListe";
             this.btnFVListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -451,6 +459,7 @@
             // 
             this.btnFVCreer.Caption = "Créer Facture";
             this.btnFVCreer.Id = 18;
+            this.btnFVCreer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFVCreer.ImageOptions.Image")));
             this.btnFVCreer.Name = "btnFVCreer";
             this.btnFVCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -458,6 +467,7 @@
             // 
             this.btnFVRepetitives.Caption = "Factures Répétitives";
             this.btnFVRepetitives.Id = 19;
+            this.btnFVRepetitives.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFVRepetitives.ImageOptions.Image")));
             this.btnFVRepetitives.Name = "btnFVRepetitives";
             this.btnFVRepetitives.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -465,18 +475,25 @@
             // 
             this.btnFVAvoir.Caption = "Afficher Factures d\'avoir";
             this.btnFVAvoir.Id = 20;
+            this.btnFVAvoir.ImageOptions.Image = global::PL.Properties.Resources.icons8_faire_défiler_36;
             this.btnFVAvoir.Name = "btnFVAvoir";
+            this.btnFVAvoir.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnFVCreerAvoir
             // 
             this.btnFVCreerAvoir.Caption = "Créer Facture d\'avoir";
             this.btnFVCreerAvoir.Id = 21;
+            this.btnFVCreerAvoir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFVCreerAvoir.ImageOptions.Image")));
             this.btnFVCreerAvoir.Name = "btnFVCreerAvoir";
+            this.btnFVCreerAvoir.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnFAListe
             // 
             this.btnFAListe.Caption = "Liste Factures d\'achat";
             this.btnFAListe.Id = 22;
+            this.btnFAListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_Cheque_36px;
             this.btnFAListe.Name = "btnFAListe";
             this.btnFAListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -484,6 +501,7 @@
             // 
             this.btnFACreer.Caption = "Créer Facture Achat";
             this.btnFACreer.Id = 23;
+            this.btnFACreer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFACreer.ImageOptions.Image")));
             this.btnFACreer.Name = "btnFACreer";
             this.btnFACreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -491,7 +509,7 @@
             // 
             this.btnFARecurrente.Caption = "Facture Achat Récurrente";
             this.btnFARecurrente.Id = 25;
-            this.btnFARecurrente.ImageOptions.Image = global::PL.Properties.Resources.icons8_liste_des_ingrédients_36;
+            this.btnFARecurrente.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFARecurrente.ImageOptions.Image")));
             this.btnFARecurrente.Name = "btnFARecurrente";
             this.btnFARecurrente.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -499,6 +517,7 @@
             // 
             this.btnFAListeAvoirsFournisseur.Caption = "Liste Avoirs Fournisseur";
             this.btnFAListeAvoirsFournisseur.Id = 26;
+            this.btnFAListeAvoirsFournisseur.ImageOptions.Image = global::PL.Properties.Resources.icons8_faire_défiler_36;
             this.btnFAListeAvoirsFournisseur.Name = "btnFAListeAvoirsFournisseur";
             this.btnFAListeAvoirsFournisseur.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -506,7 +525,7 @@
             // 
             this.btnFACreerAvoir.Caption = "Créer Avoirs Fournisseur";
             this.btnFACreerAvoir.Id = 27;
-            this.btnFACreerAvoir.ImageOptions.Image = global::PL.Properties.Resources.icons8_liste_de_vérification_361;
+            this.btnFACreerAvoir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFACreerAvoir.ImageOptions.Image")));
             this.btnFACreerAvoir.Name = "btnFACreerAvoir";
             this.btnFACreerAvoir.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -514,6 +533,7 @@
             // 
             this.btnBCVListe.Caption = "Liste Bons de Commande";
             this.btnBCVListe.Id = 28;
+            this.btnBCVListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_ordre_achat_36;
             this.btnBCVListe.Name = "btnBCVListe";
             this.btnBCVListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -521,6 +541,7 @@
             // 
             this.btnBCVCreer.Caption = "Créer Bon de Commande";
             this.btnBCVCreer.Id = 29;
+            this.btnBCVCreer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBCVCreer.ImageOptions.Image")));
             this.btnBCVCreer.Name = "btnBCVCreer";
             this.btnBCVCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -528,6 +549,7 @@
             // 
             this.btnBCAListeOA.Caption = "Liste Ordre d\'chats";
             this.btnBCAListeOA.Id = 30;
+            this.btnBCAListeOA.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBCAListeOA.ImageOptions.Image")));
             this.btnBCAListeOA.Name = "btnBCAListeOA";
             this.btnBCAListeOA.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -535,6 +557,7 @@
             // 
             this.btnBCACreerOA.Caption = "Créer Ordre d\'achat";
             this.btnBCACreerOA.Id = 31;
+            this.btnBCACreerOA.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBCACreerOA.ImageOptions.Image")));
             this.btnBCACreerOA.Name = "btnBCACreerOA";
             this.btnBCACreerOA.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -542,31 +565,43 @@
             // 
             this.btnPVListe.Caption = "Liste Paiements Ventes";
             this.btnPVListe.Id = 32;
+            this.btnPVListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_Cheque_36px;
             this.btnPVListe.Name = "btnPVListe";
+            this.btnPVListe.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnPVEntrer
             // 
             this.btnPVEntrer.Caption = "Entrer Paiements Vente";
             this.btnPVEntrer.Id = 33;
+            this.btnPVEntrer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPVEntrer.ImageOptions.Image")));
             this.btnPVEntrer.Name = "btnPVEntrer";
+            this.btnPVEntrer.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnPAListe
             // 
             this.btnPAListe.Caption = "Liste Paiements Achats";
             this.btnPAListe.Id = 35;
+            this.btnPAListe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPAListe.ImageOptions.Image")));
             this.btnPAListe.Name = "btnPAListe";
+            this.btnPAListe.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnPAEntrer
             // 
             this.btnPAEntrer.Caption = "Entrer Paiements Achat";
             this.btnPAEntrer.Id = 36;
+            this.btnPAEntrer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPAEntrer.ImageOptions.Image")));
             this.btnPAEntrer.Name = "btnPAEntrer";
+            this.btnPAEntrer.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnAListe
             // 
             this.btnAListe.Caption = "Liste Articles";
             this.btnAListe.Id = 37;
-            this.btnAListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_produit_36;
+            this.btnAListe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAListe.ImageOptions.Image")));
             this.btnAListe.Name = "btnAListe";
             this.btnAListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -574,18 +609,25 @@
             // 
             this.btnAAjouter.Caption = "Ajouter  Article";
             this.btnAAjouter.Id = 38;
+            this.btnAAjouter.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAAjouter.ImageOptions.Image")));
             this.btnAAjouter.Name = "btnAAjouter";
+            this.btnAAjouter.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnAAlertesInventaire
             // 
             this.btnAAlertesInventaire.Caption = "Voir Alertes Inventaire";
             this.btnAAlertesInventaire.Id = 39;
+            this.btnAAlertesInventaire.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAAlertesInventaire.ImageOptions.Image")));
             this.btnAAlertesInventaire.Name = "btnAAlertesInventaire";
+            this.btnAAlertesInventaire.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnAListePrix
             // 
             this.btnAListePrix.Caption = "Liste des prix";
             this.btnAListePrix.Id = 40;
+            this.btnAListePrix.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAListePrix.ImageOptions.Image")));
             this.btnAListePrix.Name = "btnAListePrix";
             this.btnAListePrix.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -593,7 +635,7 @@
             // 
             this.btnAEntrepots.Caption = "Liste Entrepôts";
             this.btnAEntrepots.Id = 41;
-            this.btnAEntrepots.ImageOptions.Image = global::PL.Properties.Resources.icons8_entrepôt_36;
+            this.btnAEntrepots.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAEntrepots.ImageOptions.Image")));
             this.btnAEntrepots.Name = "btnAEntrepots";
             this.btnAEntrepots.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -601,6 +643,7 @@
             // 
             this.btnACreerEntrepots.Caption = "Créer Entrepôts";
             this.btnACreerEntrepots.Id = 42;
+            this.btnACreerEntrepots.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnACreerEntrepots.ImageOptions.Image")));
             this.btnACreerEntrepots.Name = "btnACreerEntrepots";
             this.btnACreerEntrepots.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -608,6 +651,7 @@
             // 
             this.btnDepVoir.Caption = "Voir Dépenses";
             this.btnDepVoir.Id = 45;
+            this.btnDepVoir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDepVoir.ImageOptions.Image")));
             this.btnDepVoir.Name = "btnDepVoir";
             this.btnDepVoir.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -615,19 +659,25 @@
             // 
             this.btnDepEntrer.Caption = "Entrez une Dépense";
             this.btnDepEntrer.Id = 46;
+            this.btnDepEntrer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDepEntrer.ImageOptions.Image")));
             this.btnDepEntrer.Name = "btnDepEntrer";
+            this.btnDepEntrer.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnDepRecurrentes
             // 
             this.btnDepRecurrentes.Caption = "Les Dépenses récurrentes";
             this.btnDepRecurrentes.Id = 47;
+            this.btnDepRecurrentes.ImageOptions.Image = global::PL.Properties.Resources.icons8_bill_36px_1;
             this.btnDepRecurrentes.Name = "btnDepRecurrentes";
+            this.btnDepRecurrentes.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnBListe
             // 
             this.btnBListe.Caption = "Liste des Banques";
             this.btnBListe.Id = 48;
-            this.btnBListe.ImageOptions.Image = global::PL.Properties.Resources.icons8_compte_marchand_36;
+            this.btnBListe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBListe.ImageOptions.Image")));
             this.btnBListe.Name = "btnBListe";
             this.btnBListe.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -635,12 +685,16 @@
             // 
             this.btnBAjouter.Caption = "Ajouter une Banque";
             this.btnBAjouter.Id = 49;
+            this.btnBAjouter.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBAjouter.ImageOptions.Image")));
             this.btnBAjouter.Name = "btnBAjouter";
+            this.btnBAjouter.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnCPlanComptable
             // 
             this.btnCPlanComptable.Caption = "Plan Comptable";
             this.btnCPlanComptable.Id = 50;
+            this.btnCPlanComptable.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCPlanComptable.ImageOptions.Image")));
             this.btnCPlanComptable.Name = "btnCPlanComptable";
             this.btnCPlanComptable.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -648,6 +702,7 @@
             // 
             this.btnCCreer.Caption = "Créer un compte";
             this.btnCCreer.Id = 51;
+            this.btnCCreer.ImageOptions.Image = global::PL.Properties.Resources.icons8_comptabilité_36;
             this.btnCCreer.Name = "btnCCreer";
             this.btnCCreer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -655,6 +710,7 @@
             // 
             this.btnCGrandLivre.Caption = "Grand Livre";
             this.btnCGrandLivre.Id = 52;
+            this.btnCGrandLivre.ImageOptions.Image = global::PL.Properties.Resources.icons8_livre_histoire_36;
             this.btnCGrandLivre.Name = "btnCGrandLivre";
             this.btnCGrandLivre.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -662,6 +718,7 @@
             // 
             this.btnPSysteme.Caption = "Système";
             this.btnPSysteme.Id = 53;
+            this.btnPSysteme.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPSysteme.ImageOptions.Image")));
             this.btnPSysteme.Name = "btnPSysteme";
             this.btnPSysteme.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -669,6 +726,7 @@
             // 
             this.btnPUtilisateurs.Caption = "Compte Utilisateurs";
             this.btnPUtilisateurs.Id = 54;
+            this.btnPUtilisateurs.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPUtilisateurs.ImageOptions.Image")));
             this.btnPUtilisateurs.Name = "btnPUtilisateurs";
             this.btnPUtilisateurs.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -995,6 +1053,8 @@
             this.btnRVVentesClient.Caption = "Ventes Client";
             this.btnRVVentesClient.Id = 109;
             this.btnRVVentesClient.Name = "btnRVVentesClient";
+            this.btnRVVentesClient.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // btnRVVentesArticle
             // 
@@ -1155,7 +1215,7 @@
             this.PAArticles.ItemLinks.Add(this.btnAAjouter);
             this.PAArticles.ItemLinks.Add(this.btnAAlertesInventaire);
             this.PAArticles.ItemLinks.Add(this.btnAListePrix);
-            this.PAArticles.ItemLinks.Add(this.btnAEntrepots);
+            this.PAArticles.ItemLinks.Add(this.btnAEntrepots, true);
             this.PAArticles.ItemLinks.Add(this.btnACreerEntrepots);
             this.PAArticles.Name = "PAArticles";
             this.PAArticles.Text = "Articles";
@@ -1205,6 +1265,7 @@
             // 
             // PRVentes
             // 
+            this.PRVentes.ImageOptions.Image = global::PL.Properties.Resources.icons8_rapport_activité_36;
             this.PRVentes.ItemLinks.Add(this.btnRVVentesClient);
             this.PRVentes.ItemLinks.Add(this.btnRVVentesArticle);
             this.PRVentes.ItemLinks.Add(this.btnRVVentesUtilisateur);

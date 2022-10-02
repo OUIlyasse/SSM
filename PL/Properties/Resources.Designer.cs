@@ -65,7 +65,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_100_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-100-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_100_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_add_product_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-add-product-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_add_product_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_ajouter_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-ajouter-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_ajouter_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_ajouter_une_étiquette_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-ajouter-une-étiquette-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_ajouter_une_étiquette_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_alertes_google_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-alertes-google-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_alertes_google_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_comptabilité_36_1_ {
+        internal static System.Drawing.Bitmap icons8_comptabilité_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-comptabilité-36(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_comptabilité_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +185,17 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_compte_marchand_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-compte-marchand-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_compte_marchand_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_déconnexion_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_déconnexion_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +215,17 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_dette_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-dette-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_dette_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_dollar_américain_encerclé_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_dollar_américain_encerclé_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +245,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_entrepôt_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-entrepôt-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_entrepôt_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +255,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_facture_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-facture-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_facture_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +263,9 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_faire_défiler_36_1_ {
+        internal static System.Drawing.Bitmap icons8_faire_défiler_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-faire-défiler-36(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_faire_défiler_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -255,7 +275,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_historique_de_paiement_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-historique-de-paiement-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_historique_de_paiement_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +285,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_historique_des_activités_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-historique-des-activités-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_historique_des_activités_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +295,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_historique_des_commandes_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-historique-des-commandes-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_historique_des_commandes_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,7 +305,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_le_reçu_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-le-reçu-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_le_reçu_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,17 +315,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_liste_de_vérification_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-liste-de-vérification-36", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_liste_de_vérification_361 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-liste-de-vérification-361", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_liste_de_vérification_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -315,7 +325,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_liste_des_ingrédients_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-liste-des-ingrédients-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_liste_des_ingrédients_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,19 +333,9 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_liste_des_ingrédients_361 {
+        internal static System.Drawing.Bitmap icons8_livre_histoire_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-liste-des-ingrédients-361", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_livre_d__39_histoire_36 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-livre-d&#39;histoire-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_livre_histoire_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -355,7 +355,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_nouveau_fichier_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-nouveau-fichier-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_nouveau_fichier_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +363,19 @@ namespace PL.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_ordre_d_achat_36 {
+        internal static System.Drawing.Bitmap icons8_ordre_achat_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-ordre-d\'achat-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_ordre_achat_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_paramètres_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_paramètres_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,7 +385,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_paramètres_administrateur_homme_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-paramètres-administrateur-homme-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_paramètres_administrateur_homme_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,7 +395,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_pièces_de_monnaie_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-pièces-de-monnaie-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_pièces_de_monnaie_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -395,7 +405,17 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_produit_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-produit-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_produit_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_rapport_activité_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_rapport_activité_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -405,7 +425,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_remboursement_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-remboursement-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_remboursement_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +445,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap icons8_support_informatique_36 {
             get {
-                object obj = ResourceManager.GetObject("icons8-support-informatique-36", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_support_informatique_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -436,6 +456,16 @@ namespace PL.Properties {
         internal static System.Drawing.Bitmap icons8_users_36px {
             get {
                 object obj = ResourceManager.GetObject("icons8_users_36px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transfert_argent_36 {
+            get {
+                object obj = ResourceManager.GetObject("transfert_argent_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

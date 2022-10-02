@@ -247,6 +247,21 @@
   <ItemGroup>
     <None Include="Resources\icons8-alertes-google-36.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dollar-américain-encerclé-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_rapport_activité_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_paramètres_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_déconnexion_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_paramètres_30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
